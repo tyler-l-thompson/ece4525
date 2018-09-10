@@ -20,7 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Basic_Binary_Adder(
+module One_Bit_Adder(
 
+    );
+endmodule
+
+module Four_Bit_Adder(
+    
     );
 endmodule
