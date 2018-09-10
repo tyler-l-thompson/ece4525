@@ -1,4 +1,4 @@
-
+# Lab 2 Task 1
 ##Switches
 set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVCMOS33 } [get_ports { input_a }]; #IO_L3N_T0_DQS_EMCCLK_14 Sch=sw[1]
 set_property -dict { PACKAGE_PIN R15   IOSTANDARD LVCMOS33 } [get_ports { input_b }]; #IO_L13N_T2_MRCC_14 Sch=sw[3]

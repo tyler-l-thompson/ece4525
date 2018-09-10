@@ -1,35 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 09/10/2018 11:42:50 AM
--- Design Name: 
--- Module Name: Four_Bit_Adder - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
+-- Engineer: Tyler Thompson
+-- Create Date: 09/10/2018 11:43:54 AM
+-- Project Name: Lab2 - Task2
 ----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity Four_Bit_Adder is
     Port ( 
@@ -39,7 +15,6 @@ entity Four_Bit_Adder is
 end Four_Bit_Adder;
 
 architecture Behavioral of Four_Bit_Adder is
-
 begin
 
 
