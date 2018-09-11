@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ecelab/Lab1/Lab1.sim/sim_1/behav/modelsim
+T_opt
+!s110 1536188476
+VnJgF4?U4X4cB?_06^nhYj0
+04 10 10 work full_adder behavioral 1
+=1-989096e344d4-5b90603c-97-1e1c
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L secureip +acc
+tCvgOpt 0
+n@_opt
+OL;O;10.7b;67
+Efull_adder
+Z1 w1536187744
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z4 8../../../../Lab1.srcs/sources_1/new/Full_Adder.vhd
+Z5 F../../../../Lab1.srcs/sources_1/new/Full_Adder.vhd
+l0
+L34
+VQibEDFG3S4DhiD?>QezdS1
+!s100 EL@5>=n39zoQ3[hf_3:^e0
+Z6 OL;C;10.7b;67
+31
+Z7 !s110 1536188469
+!i10b 1
+Z8 !s108 1536188469.000000
+Z9 !s90 -64|-93|-work|xil_defaultlib|../../../../Lab1.srcs/sources_1/new/Full_Adder.vhd|
+Z10 !s107 ../../../../Lab1.srcs/sources_1/new/Full_Adder.vhd|
+!i113 0
+Z11 o-93 -work xil_defaultlib
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 10 full_adder 0 22 QibEDFG3S4DhiD?>QezdS1
+l44
+L42
+V<ejE2b7>Z@@R?eei7[K^30
+!s100 4@e^cbI0UGW@RK^SfKXiQ2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
