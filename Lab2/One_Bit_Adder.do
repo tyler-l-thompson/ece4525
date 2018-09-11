@@ -1,4 +1,4 @@
-resart
+restart
 
 force input_a 0
 force input_b 0
