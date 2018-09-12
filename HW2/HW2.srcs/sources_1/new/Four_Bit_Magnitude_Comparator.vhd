@@ -1,43 +1,27 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
+-- Engineer: Tyler Thompson
 -- Create Date: 09/12/2018 12:22:44 PM
--- Design Name: 
 -- Module Name: Four_Bit_Magnitude_Comparator - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
+-- Project Name: HW2
 ----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity Four_Bit_Magnitude_Comparator is
---  Port ( );
+  Port ( 
+    input_a0, input_a1, input_a2, input_a3, input_b0, input_b1, input_b2, input_b3, input_less_than, input_equal, input_greater_than : in STD_LOGIC;
+    output_less_than, output_equal, output_greater_than : out STD_LOGIC
+  );
 end Four_Bit_Magnitude_Comparator;
 
 architecture Behavioral of Four_Bit_Magnitude_Comparator is
 
+signal less_than, equal, greater_than : STD_LOGIC:='1';
+
 begin
+
+
 
 
 end Behavioral;
