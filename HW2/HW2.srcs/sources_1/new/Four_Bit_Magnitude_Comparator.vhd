@@ -73,12 +73,12 @@ begin
     A01 <= (not (com_nand2 and input_b2 and equal_3));
     A02 <= (not (com_nand1 and input_b1 and equal_32));
     A03 <= (not (input_b0 and  equal_321 and com_nand0));
-    A04 <= equal_321 nand input_less_than;
+    A04 <= equal_3210 nand input_less_than;
     A05 <= not equal_3210in;
     
     -- Less than gate mapping
     A10 <= not equal_3210in;
-    A11 <= equal_321 nand input_greater_than;
+    A11 <= equal_3210 nand input_greater_than;
     A12 <= (not (equal_321 and com_nand0 and input_a0));
     A13 <= (not (equal_32 and com_nand1 and input_a1));
     A14 <= (not (equal_3 and input_a2 and com_nand2));
