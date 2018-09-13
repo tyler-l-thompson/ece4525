@@ -76,13 +76,6 @@ begin
     A04 <= equal_321 nand input_less_than;
     A05 <= not equal_3210in;
     
-    ----    output_greater_than <= (input_b3 nand com_nand3) and
-    ----                           (not (input_b2 and com_nand2 and equal_3)) and 
-    ----                           (not (input_b1 and com_nand1 and equal_3 and equal_2)) and 
-    ----                           (not (input_b0 and com_nand0 and equal_3 and equal_2 and equal_1)) and 
-    ----                           (not (equal_3 and equal_2 and equal_1 and input_less_than)) and 
-    ----                           (not (equal_3 and equal_2 and equal_1 and equal_0 and input_equal));
-    
     -- Less than gate mapping
     A10 <= not equal_3210in;
     A11 <= equal_321 nand input_greater_than;
@@ -90,13 +83,6 @@ begin
     A13 <= (not (equal_32 and com_nand1 and input_a1));
     A14 <= (not (equal_3 and input_a2 and com_nand2));
     A15 <= com_nand3 nand input_a3;
-    
-    ----    output_less_than <= (not (equal_3 and equal_2 and equal_1 and equal_0 and input_equal)) and 
-    ----                           (not (equal_3 and equal_2 and equal_1 and input_greater_than)) and
-    ----                           (not (equal_3 and equal_2 and equal_1 and com_nand0 and input_a0)) and
-    ----                           (not (equal_3 and equal_2 and com_nand1 and input_a1)) and
-    ----                           (not (equal_3 and input_a2 and com_nand2)) and
-    ----                           (input_a3 nand com_nand3);
     
     -- Greater than gate
     A0 : Six_Way_And port map (
