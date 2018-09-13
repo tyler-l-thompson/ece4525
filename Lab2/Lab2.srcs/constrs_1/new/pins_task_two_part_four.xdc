@@ -18,5 +18,5 @@ set_property -dict { PACKAGE_PIN R18   IOSTANDARD LVCMOS33 } [get_ports { sum3 }
 ##Pmod Headers
 ##Pmod Header JB
 
-set_property -dict { PACKAGE_PIN D14   IOSTANDARD LVCMOS33 } [get_ports { carry_in] }]; #IO_L1P_T0_AD0P_15 Sch=jb[1]
+set_property -dict { PACKAGE_PIN D14   IOSTANDARD LVCMOS33 } [get_ports { carry_in }]; #IO_L1P_T0_AD0P_15 Sch=jb[1]
 set_property -dict { PACKAGE_PIN G16   IOSTANDARD LVCMOS33 } [get_ports { carry_out }]; #IO_L13N_T2_MRCC_15 Sch=jb[3]

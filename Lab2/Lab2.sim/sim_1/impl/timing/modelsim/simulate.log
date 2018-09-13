@@ -1,0 +1,48 @@
+# do {Four_Bit_Adder_simulate.do}
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -do "do {Four_Bit_Adder_simulate.do}" -l simulate.log 
+# Start time: 23:35:10 on Sep 12,2018
+# Loading xil_defaultlib.Four_Bit_Adder
+# Loading simprims_ver.IBUF
+# Loading simprims_ver.OBUF
+# Loading simprims_ver.LUT5
+# Loading simprims_ver.LUT3
+# Loading xil_defaultlib.glbl
+# SDF 10.4a Compiler 2015.03 Apr  7 2015
+# 
+# Loading instances from Four_Bit_Adder_time_impl.sdf
+# Loading simprims_ver.x_lut3_mux8
+# Loading timing data from Four_Bit_Adder_time_impl.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Four_Bit_Adder File: Four_Bit_Adder_time_impl.v
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do C:/Users/Dexter/Documents/ECE4525/Lab2/Four_Bit_Adder_Propegation.do
+# SDF 10.4a Compiler 2015.03 Apr  7 2015
+# 
+# Loading instances from Four_Bit_Adder_time_impl.sdf
+# Loading timing data from Four_Bit_Adder_time_impl.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Four_Bit_Adder File: Four_Bit_Adder_time_impl.v
+# End time: 00:24:46 on Sep 13,2018, Elapsed time: 0:49:36
+# Errors: 0, Warnings: 0
