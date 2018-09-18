@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Dexter/Documents/ECE4525/Lab2/Lab2.sim/sim_1/behav/modelsim
+Efour_bit_adder
+Z1 w1536674598
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../../../../Lab2.srcs/sources_1/new/Four_Bit_Adder.vhd
+Z5 F../../../../Lab2.srcs/sources_1/new/Four_Bit_Adder.vhd
+l0
+L10
+VRkg][jHCaAP8L9R8O>9JG0
+!s100 8O;F70S29i1goEQn[d>;82
+Z6 OP;C;10.4a;61
+31
+Z7 !s110 1536679661
+!i10b 1
+Z8 !s108 1536679661.000000
+Z9 !s90 -64|-93|-work|xil_defaultlib|../../../../Lab2.srcs/sources_1/new/One_Bit_Adder.vhd|../../../../Lab2.srcs/sources_1/new/Four_Bit_Adder.vhd|
+Z10 !s107 ../../../../Lab2.srcs/sources_1/new/Four_Bit_Adder.vhd|../../../../Lab2.srcs/sources_1/new/One_Bit_Adder.vhd|
+!i113 1
+Z11 o-93 -work xil_defaultlib -O0
+Z12 tExplicit 1
+Abehavioral
+R2
+R3
+DEx4 work 14 four_bit_adder 0 22 Rkg][jHCaAP8L9R8O>9JG0
+l28
+L17
+V:zS_FbE;koVlehmT8CGlW3
+!s100 IdL8ocVBdPXP>blGmf4MJ0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eone_bit_adder
+R1
+R2
+R3
+R0
+Z13 8../../../../Lab2.srcs/sources_1/new/One_Bit_Adder.vhd
+Z14 F../../../../Lab2.srcs/sources_1/new/One_Bit_Adder.vhd
+l0
+L10
+V3=FL1nnP]Mf@zN=V<hJ4l0
+!s100 eKDailWRzmdRCoDMmm7Vg2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 13 one_bit_adder 0 22 3=FL1nnP]Mf@zN=V<hJ4l0
+l18
+L17
+V1Fi0Ob836goLH[?2^]Gkk0
+!s100 LRX6Ihf5iQZKT7d<e_:nd0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
