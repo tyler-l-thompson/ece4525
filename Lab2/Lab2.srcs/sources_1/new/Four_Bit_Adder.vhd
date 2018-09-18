@@ -30,7 +30,7 @@ begin
     A0: One_Bit_Adder port map (
             input_a => input_a0,
             input_b => input_b0,
-            carry_in => '0',
+            carry_in => carry_in,
             sum => sum0,
             carry_out => carry_out0
         );
