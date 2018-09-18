@@ -22,4 +22,8 @@ begin
     F <= (A and not B) or (not B and C) or (not A and C);
     F_alpha <= C; 
     -- stuck at 0 fault detection for A=0
+    -- Test vectors
+    -- A B C F F_alpha
+    -- 1 1 1 0 1
+    -- 1 0 0 1 0
 end Behavioral;
