@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Dexter/Documents/ECE4525/Lab3/Lab3.sim/sim_1/behav/modelsim
+Eone_bit_adder
+Z1 w1537410071
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../../../../Lab3.srcs/sources_1/new/One_Bit_Adder.vhd
+Z5 F../../../../Lab3.srcs/sources_1/new/One_Bit_Adder.vhd
+l0
+L10
+V3=FL1nnP]Mf@zN=V<hJ4l0
+!s100 eKDailWRzmdRCoDMmm7Vg2
+Z6 OP;C;10.4a;61
+31
+Z7 !s110 1537396405
+!i10b 1
+Z8 !s108 1537396405.000000
+Z9 !s90 -64|-93|-work|xil_defaultlib|../../../../Lab3.srcs/sources_1/new/One_Bit_Adder.vhd|../../../../Lab3.srcs/sources_1/new/Two_Line_Mux.vhd|../../../../Lab3.srcs/sources_1/new/Task_One.vhd|
+Z10 !s107 ../../../../Lab3.srcs/sources_1/new/Task_One.vhd|../../../../Lab3.srcs/sources_1/new/Two_Line_Mux.vhd|../../../../Lab3.srcs/sources_1/new/One_Bit_Adder.vhd|
+!i113 1
+Z11 o-93 -work xil_defaultlib -O0
+Z12 tExplicit 1
+Abehavioral
+R2
+R3
+DEx4 work 13 one_bit_adder 0 22 3=FL1nnP]Mf@zN=V<hJ4l0
+l18
+L17
+V1Fi0Ob836goLH[?2^]Gkk0
+!s100 LRX6Ihf5iQZKT7d<e_:nd0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etask_one
+R1
+R2
+R3
+R0
+Z13 8../../../../Lab3.srcs/sources_1/new/Task_One.vhd
+Z14 F../../../../Lab3.srcs/sources_1/new/Task_One.vhd
+l0
+L12
+V]2b5>CcIR0gai0[6P<E8c2
+!s100 >LQ1BP]fzaI>3>]oknNCG2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 8 task_one 0 22 ]2b5>CcIR0gai0[6P<E8c2
+l36
+L19
+VLMdU2;cPOicKd4?9eO5bX1
+!s100 CWg1VQ3nAfQ8`=oKG[odD1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etask_two_part_one
+R1
+R2
+R3
+R0
+Z15 8../../../../Lab3.srcs/sources_1/new/Task_Two_Part_One.vhd
+Z16 F../../../../Lab3.srcs/sources_1/new/Task_Two_Part_One.vhd
+l0
+L12
+VAol:V9oza^UeF0TiScIWK2
+!s100 T@@8=ROLJ10OhhLh^YG6f3
+R6
+31
+Z17 !s110 1537402879
+!i10b 1
+Z18 !s108 1537402879.000000
+Z19 !s90 -64|-93|-work|xil_defaultlib|../../../../Lab3.srcs/sources_1/new/Task_Two_Part_One.vhd|
+Z20 !s107 ../../../../Lab3.srcs/sources_1/new/Task_Two_Part_One.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 17 task_two_part_one 0 22 Aol:V9oza^UeF0TiScIWK2
+l21
+L19
+Vi8TKPmV3Gdna8CM_oGR:A2
+!s100 QCK6HC0z7P51E7XRE<nnd2
+R6
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Etwo_line_mux
+R1
+R2
+R3
+R0
+Z21 8../../../../Lab3.srcs/sources_1/new/Two_Line_Mux.vhd
+Z22 F../../../../Lab3.srcs/sources_1/new/Two_Line_Mux.vhd
+l0
+L12
+V7QHA71c?d2IeE>R:Lm@Og1
+!s100 VX3adIEBcoKGF37ff<<FB2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 12 two_line_mux 0 22 7QHA71c?d2IeE>R:Lm@Og1
+l21
+L19
+V[GSCMV:65Q@IB^aK`f6IS3
+!s100 PYbVEoV@@kXjncZhJ`NK11
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

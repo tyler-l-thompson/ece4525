@@ -11,7 +11,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Task_One is
  Port ( 
-       A, B, CIN, C0, C1, C2, C3, Sel0, Sel1, Sel2, Sel3 : in STD_LOGIC;
+       input_A, input_B, CIN, C0, C1, C2, C3, Sel0, Sel1, Sel2, Sel3 : in STD_LOGIC;
        SUM, COUT, Y0, Y1, Y2, Y3 : out STD_LOGIC 
         );
 end Task_One;
@@ -36,8 +36,8 @@ architecture Behavioral of Task_One is
 begin
 
     A0: One_Bit_Adder port map (
-            input_a => A,
-            input_b => B,
+            input_a => input_A,
+            input_b => input_B,
             carry_in => CIN,
             sum => SUM,
             carry_out => carry_out

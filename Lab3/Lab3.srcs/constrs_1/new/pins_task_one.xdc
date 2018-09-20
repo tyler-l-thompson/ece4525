@@ -1,7 +1,7 @@
 
 ##Switches
-set_property -dict { PACKAGE_PIN R13   IOSTANDARD LVCMOS33 } [get_ports { A }]; #IO_L5N_T0_D07_14 Sch=sw[7]
-set_property -dict { PACKAGE_PIN T8    IOSTANDARD LVCMOS18 } [get_ports { B }]; #IO_L24N_T3_34 Sch=sw[8]
+set_property -dict { PACKAGE_PIN R13   IOSTANDARD LVCMOS33 } [get_ports { input_A }]; #IO_L5N_T0_D07_14 Sch=sw[7]
+set_property -dict { PACKAGE_PIN T8    IOSTANDARD LVCMOS18 } [get_ports { input_B }]; #IO_L24N_T3_34 Sch=sw[8]
 
 ##Pmod Header JA
 set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { C0 }]; #IO_L20N_T3_A19_15 Sch=ja[1]

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dexter/Documents/ECE4525/Lab3/Lab3.srcs/sources_1/new/One_Bit_Adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity One_Bit_Adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dexter/Documents/ECE4525/Lab3/Lab3.srcs/sources_1/new/Two_Line_Mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Two_Line_Mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Dexter/Documents/ECE4525/Lab3/Lab3.srcs/sources_1/new/Task_One.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Task_One
