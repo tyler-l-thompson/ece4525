@@ -1,35 +1,13 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
+-- Engineer: Tyler Thompson
 -- Create Date: 09/24/2018 01:38:39 PM
--- Design Name: 
+-- Design Name: Lab4
 -- Module Name: Eight_Bit_Magnitude_Comparator - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
 ----------------------------------------------------------------------------------
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity Eight_Bit_Magnitude_Comparator is
     Port ( LA : in STD_LOGIC;
@@ -57,64 +35,47 @@ end Eight_Bit_Magnitude_Comparator;
 
 architecture Behavioral of Eight_Bit_Magnitude_Comparator is
 
-    component One_Bit_Equator
-        port ( input_a : in STD_LOGIC;
-               input_b : in STD_LOGIC;
-               output : out STD_LOGIC);  
+    component Four_Bit_Magnitude_Comparator
+      Port ( input_a0, input_a1, input_a2, input_a3, input_b0, input_b1, input_b2, input_b3, input_less_than, input_equal, input_greater_than : in STD_LOGIC;
+             output_less_than, output_equal, output_greater_than : out STD_LOGIC);
     end component;
 
-    signal equal_0, equal_1, equal_2, equal_3, equal_4, equal_5, equal_6, equal_7, MSB : STD_LOGIC;
+    signal less_than, equal, greater_than : STD_LOGIC;
 
 begin
 
-    E0 : One_Bit_Equator port map (
-        input_a => P0,
-        input_b => Q0,
-        output => equal_0
-    );
-    
-    E1 : One_Bit_Equator port map (
-        input_a => P1,
-        input_b => Q1,
-        output => equal_1
-    );
-    
-    E2 : One_Bit_Equator port map (
-        input_a => P2,
-        input_b => Q2,
-        output => equal_2
-    );
-    
-    E3 : One_Bit_Equator port map (
-        input_a => P3,
-        input_b => Q3,
-        output => equal_3
-    );
-    
-    E4 : One_Bit_Equator port map (
-        input_a => P4,
-        input_b => Q4,
-        output => equal_4
-    );
-        
-    E5 : One_Bit_Equator port map (
-        input_a => P5,
-        input_b => Q5,
-        output => equal_5
-    );
-            
-    E6 : One_Bit_Equator port map (
-        input_a => P6,
-        input_b => Q6,
-        output => equal_6
-    );
-                
-     E7 : One_Bit_Equator port map (
-        input_a => P7,
-        input_b => Q7,
-        output => equal_7
-    );
-
-    MSB <= 
+    COMP0 : Four_Bit_Magnitude_Comparator port map (
+        input_a0 => P0,
+        input_a1 => P1,
+        input_a2 => P2,
+        input_a3 => P3,
+        input_b0 => Q0,
+        input_b1 => Q1,
+        input_b2 => Q2,
+        input_b3 => Q3,
+        input_less_than => P_LT_QIN, 
+        input_equal => '0',
+        input_greater_than => P_GT_QIN, 
+        output_less_than => less_than,
+        output_equal => equal,
+        output_greater_than => greater_than
+     );    
+     
+     COMP1 : Four_Bit_Magnitude_Comparator port map (
+         input_a0 => P4,
+         input_a1 => P5,
+         input_a2 => P6,
+         input_a3 => P7,
+         input_b0 => Q4,
+         input_b1 => Q5,
+         input_b2 => Q6,
+         input_b3 => Q7,
+         input_less_than => less_than, 
+         input_equal => equal,
+         input_greater_than => greater_than, 
+         output_less_than => P_LT_QOUT,
+         output_equal => open,
+         output_greater_than => P_GT_QOUT
+      );
     
 end Behavioral;
