@@ -30,12 +30,12 @@ architecture Behavioral of Seven_Seg_Decoder is
 
 begin
 
-    output_a <= not((not input_c or input_a) and (not input_d or not input_b) and (input_d or input_c or input_b or not input_a)) and input_lt;
-    output_b <= not((not input_d or not input_b) and (not input_c or input_b or not input_a) and (not input_c or not input_b or input_a)) and input_lt;
-    output_c <= not((not input_d or not input_c) and (input_c or not input_b or input_a)) and input_lt;
-    output_d <= not((input_c or input_b or not input_a) and (not input_c or input_b or input_a) and (not input_c or not input_b or not input_a)) and input_lt;
-    output_e <= not((not input_a) and (not input_c or input_b)) and input_lt;
-    output_f <= not((input_c or not input_b) and (not input_b or not input_a) and (input_d or input_c or not input_a)) and input_lt;
-    output_g <= not((input_d or input_c or input_b) and (not input_c or not input_b or not input_a)) and input_lt;
+    output_a <= ((not input_c or input_a) and (not input_d or not input_b) and (input_d or input_c or input_b or not input_a)) and input_lt;
+    output_b <= ((not input_d or not input_b) and (not input_c or input_b or not input_a) and (not input_c or not input_b or input_a)) and input_lt;
+    output_c <= ((not input_d or not input_c) and (input_c or not input_b or input_a)) and input_lt;
+    output_d <= ((input_c or input_b or not input_a) and (not input_c or input_b or input_a) and (not input_c or not input_b or not input_a)) and input_lt;
+    output_e <= ((not input_a) and (not input_c or input_b)) and input_lt;
+    output_f <= ((input_c or not input_b) and (not input_b or not input_a) and (input_d or input_c or not input_a)) and input_lt;
+    output_g <= ((input_d or input_c or input_b) and (not input_c or not input_b or not input_a)) and input_lt;
 
 end Behavioral;
