@@ -1,0 +1,283 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Dexter/Documents/ECE4525/Lab4/Lab4.sim/sim_1/behav/modelsim
+Eeight_bit_magnitude_comparator
+Z1 w1538004698
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../../../../Lab4.srcs/sources_1/new/Eight_Bit_Magnitude_Comparator.vhd
+Z5 F../../../../Lab4.srcs/sources_1/new/Eight_Bit_Magnitude_Comparator.vhd
+l0
+L12
+VY_^?_9i4a;=hidf9enA0n1
+!s100 Jb[D><W_UEFmSj=Vfcl_>0
+Z6 OP;C;10.4a;61
+31
+Z7 !s110 1538004708
+!i10b 1
+Z8 !s108 1538004708.000000
+Z9 !s90 -64|-93|-work|xil_defaultlib|../../../../Lab4.srcs/sources_1/new/Four_Bit_Adder.vhd|../../../../Lab4.srcs/sources_1/new/Four_Bit_Magnitude_Comparator.vhd|../../../../Lab4.srcs/sources_1/new/One_Bit_Adder.vhd|../../../../Lab4.srcs/sources_1/new/One_Bit_Magnitude_Comparator.vhd|../../../../Lab4.srcs/sources_1/new/Six_Way_And.vhd|../../../../Lab4.srcs/sources_1/new/Twos_Complementor.vhd|../../../../Lab4.srcs/sources_1/new/Eight_Bit_Magnitude_Comparator.vhd|
+Z10 !s107 ../../../../Lab4.srcs/sources_1/new/Eight_Bit_Magnitude_Comparator.vhd|../../../../Lab4.srcs/sources_1/new/Twos_Complementor.vhd|../../../../Lab4.srcs/sources_1/new/Six_Way_And.vhd|../../../../Lab4.srcs/sources_1/new/One_Bit_Magnitude_Comparator.vhd|../../../../Lab4.srcs/sources_1/new/One_Bit_Adder.vhd|../../../../Lab4.srcs/sources_1/new/Four_Bit_Magnitude_Comparator.vhd|../../../../Lab4.srcs/sources_1/new/Four_Bit_Adder.vhd|
+!i113 1
+Z11 o-93 -work xil_defaultlib -O0
+Z12 tExplicit 1
+Abehavioral
+R2
+R3
+Z13 DEx4 work 30 eight_bit_magnitude_comparator 0 22 Y_^?_9i4a;=hidf9enA0n1
+l50
+L36
+VIgb:_M4OG6f6DF79:IIT]2
+!s100 @Sc^B7Z90XRER7e[0hE_X1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efour_bit_adder
+Z14 w1538002267
+R2
+R3
+R0
+Z15 8../../../../Lab4.srcs/sources_1/new/Four_Bit_Adder.vhd
+Z16 F../../../../Lab4.srcs/sources_1/new/Four_Bit_Adder.vhd
+l0
+L10
+VRkg][jHCaAP8L9R8O>9JG0
+!s100 8O;F70S29i1goEQn[d>;82
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z17 DEx4 work 14 four_bit_adder 0 22 Rkg][jHCaAP8L9R8O>9JG0
+l28
+L17
+Z18 V_STWC@TY[UJeI78MH3ID[3
+Z19 !s100 [YVjZ>M5SZDR@G6fPAobJ1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efour_bit_magnitude_comparator
+Z20 w1537902928
+R2
+R3
+R0
+Z21 8../../../../Lab4.srcs/sources_1/new/Four_Bit_Magnitude_Comparator.vhd
+Z22 F../../../../Lab4.srcs/sources_1/new/Four_Bit_Magnitude_Comparator.vhd
+l0
+L11
+V<gF<?6dH;cM3^eD`KQhXd3
+!s100 aRDh8Y5YF74Ejh9L3`VU80
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z23 DEx4 work 29 four_bit_magnitude_comparator 0 22 <gF<?6dH;cM3^eD`KQhXd3
+l35
+L18
+Z24 V<V>34;K2So9^^oT8l6WKh2
+Z25 !s100 Ba92o217@dDG1@FOU6ZfV2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eone_bit_adder
+Z26 w1538002225
+R2
+R3
+R0
+Z27 8../../../../Lab4.srcs/sources_1/new/One_Bit_Adder.vhd
+Z28 F../../../../Lab4.srcs/sources_1/new/One_Bit_Adder.vhd
+l0
+L10
+V3=FL1nnP]Mf@zN=V<hJ4l0
+!s100 eKDailWRzmdRCoDMmm7Vg2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z29 DEx4 work 13 one_bit_adder 0 22 3=FL1nnP]Mf@zN=V<hJ4l0
+l18
+L17
+Z30 V1Fi0Ob836goLH[?2^]Gkk0
+Z31 !s100 LRX6Ihf5iQZKT7d<e_:nd0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eone_bit_magnitude_comparator
+R20
+R2
+R3
+R0
+Z32 8../../../../Lab4.srcs/sources_1/new/One_Bit_Magnitude_Comparator.vhd
+Z33 F../../../../Lab4.srcs/sources_1/new/One_Bit_Magnitude_Comparator.vhd
+l0
+L11
+V7;k_Tmh42J;ad2?;aKdGT2
+!s100 504k6Bg^Y9[TmSJj@mAoL1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z34 DEx4 work 28 one_bit_magnitude_comparator 0 22 7;k_Tmh42J;ad2?;aKdGT2
+l24
+L20
+Z35 V<QAQNom@B;7YGk[HI<0<o0
+Z36 !s100 M@cm4z=;S[GLEHUzUeP^M1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esix_way_and
+R20
+R2
+R3
+R0
+Z37 8../../../../Lab4.srcs/sources_1/new/Six_Way_And.vhd
+Z38 F../../../../Lab4.srcs/sources_1/new/Six_Way_And.vhd
+l0
+L11
+VOk?ImfbH7d?PGB?9X3L?31
+!s100 =AMeGhUPEkRdc@;4KQGhK0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z39 DEx4 work 11 six_way_and 0 22 Ok?ImfbH7d?PGB?9X3L?31
+l20
+L18
+Z40 V^C9>6oYkZS_QN?``]EWaQ3
+Z41 !s100 1S=EEPzU6[ZcU:z_KXScI1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etwos_complementor
+Z42 w1538003330
+R2
+R3
+R0
+Z43 8../../../../Lab4.srcs/sources_1/new/Twos_Complementor.vhd
+Z44 F../../../../Lab4.srcs/sources_1/new/Twos_Complementor.vhd
+l0
+L12
+VeNYQhClc[i<cO9S79013@1
+!s100 V3dgV2M`MF=GJVAa62>B<1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z45 DEx4 work 17 twos_complementor 0 22 eNYQhClc[i<cO9S79013@1
+l41
+L32
+Z46 V^DTlU0PHDFNEzKGOWa;7Z1
+Z47 !s100 ;F2@nfeUF20C[[;Pj7Sin2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

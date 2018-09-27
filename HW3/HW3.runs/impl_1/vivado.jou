@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Sep 24 20:35:39 2018
-# Process ID: 16343
-# Current directory: /home/dexter/scripts/ECE4525/HW3/HW3.runs/impl_1
-# Command line: vivado -log Seven_Seg_Decoder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Seven_Seg_Decoder.tcl -notrace
-# Log file: /home/dexter/scripts/ECE4525/HW3/HW3.runs/impl_1/Seven_Seg_Decoder.vdi
-# Journal file: /home/dexter/scripts/ECE4525/HW3/HW3.runs/impl_1/vivado.jou
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue Sep 25 12:10:55 2018
+# Process ID: 4856
+# Current directory: C:/Users/Dexter/Documents/ECE4525/HW3/HW3.runs/impl_1
+# Command line: vivado.exe -log Seven_Seg_Decoder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Seven_Seg_Decoder.tcl -notrace
+# Log file: C:/Users/Dexter/Documents/ECE4525/HW3/HW3.runs/impl_1/Seven_Seg_Decoder.vdi
+# Journal file: C:/Users/Dexter/Documents/ECE4525/HW3/HW3.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Seven_Seg_Decoder.tcl -notrace

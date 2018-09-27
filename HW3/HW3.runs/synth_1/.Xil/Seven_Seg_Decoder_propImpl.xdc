@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/dexter/scripts/ECE4525/HW3/HW3.srcs/constrs_1/new/pins_hw3.xdc rfile:../../../HW3.srcs/constrs_1/new/pins_hw3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Dexter/Documents/ECE4525/HW3/HW3.srcs/constrs_1/new/pins_hw3.xdc rfile:../../../HW3.srcs/constrs_1/new/pins_hw3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { input_a }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]

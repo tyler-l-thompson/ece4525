@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Mon Sep 24 20:35:27 2018
-| Host             : x2r2 running 64-bit Ubuntu 16.04.5 LTS
+| Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date             : Tue Sep 25 12:12:02 2018
+| Host             : Ferrari running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file Seven_Seg_Decoder_power_routed.rpt -pb Seven_Seg_Decoder_power_summary_routed.pb -rpx Seven_Seg_Decoder_power_routed.rpx
 | Design           : Seven_Seg_Decoder
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 5.664        |
+| Total On-Chip Power (W)  | 6.406        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 5.535        |
-| Device Static (W)        | 0.129        |
+| Dynamic (W)              | 6.269        |
+| Device Static (W)        | 0.136        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 59.2         |
-| Junction Temperature (C) | 50.8         |
+| Max Ambient (C)          | 55.8         |
+| Junction Temperature (C) | 54.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.022 |        7 |       --- |             --- |
-|   LUT as Logic |     0.022 |        4 |     63400 |           <0.01 |
-| Signals        |     0.068 |       12 |       --- |             --- |
-| I/O            |     5.445 |       12 |       210 |            5.71 |
-| Static Power   |     0.129 |          |           |                 |
-| Total          |     5.664 |          |           |                 |
+| Slice Logic    |     0.023 |        7 |       --- |             --- |
+|   LUT as Logic |     0.023 |        4 |     63400 |           <0.01 |
+| Signals        |     0.073 |       12 |       --- |             --- |
+| I/O            |     6.174 |       12 |       210 |            5.71 |
+| Static Power   |     0.136 |          |           |                 |
+| Total          |     6.406 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +67,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.151 |       0.110 |      0.041 |
-| Vccaux    |       1.800 |     0.220 |       0.199 |      0.021 |
-| Vcco33    |       3.300 |     1.540 |       1.536 |      0.004 |
+| Vccint    |       1.000 |     0.163 |       0.116 |      0.047 |
+| Vccaux    |       1.800 |     0.247 |       0.225 |      0.022 |
+| Vcco33    |       3.300 |     1.746 |       1.742 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -134,7 +134,7 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| Seven_Seg_Decoder |     5.535 |
+| Seven_Seg_Decoder |     6.269 |
 +-------------------+-----------+
 
 

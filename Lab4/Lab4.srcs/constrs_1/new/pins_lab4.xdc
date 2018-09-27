@@ -1,8 +1,8 @@
 ##Switches
 
-set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { P_LT_IN }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
-set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVCMOS33 } [get_ports { P_GT_IN }]; #IO_L3N_T0_DQS_EMCCLK_14 Sch=sw[1]
-set_property -dict { PACKAGE_PIN M13   IOSTANDARD LVCMOS33 } [get_ports { LA }]; #IO_L6N_T0_D08_VREF_14 Sch=sw[2]
+set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { P_LT_QIN }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
+set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVCMOS33 } [get_ports { P_GT_QIN }]; #IO_L3N_T0_DQS_EMCCLK_14 Sch=sw[1]
+#set_property -dict { PACKAGE_PIN M13   IOSTANDARD LVCMOS33 } [get_ports { LA }]; #IO_L6N_T0_D08_VREF_14 Sch=sw[2]
 
 ##Pmod Header JA
 
@@ -28,6 +28,6 @@ set_property -dict { PACKAGE_PIN H16   IOSTANDARD LVCMOS33 } [get_ports { Q7 }];
 
 ##Pmod Header JC
 
-set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { P_LT_OUT }]; #IO_L23N_T3_35 Sch=jc[1]
-set_property -dict { PACKAGE_PIN F6    IOSTANDARD LVCMOS33 } [get_ports { P_GT_OUT }]; #IO_L19N_T3_VREF_35 Sch=jc[2]
-
+set_property -dict { PACKAGE_PIN K1    IOSTANDARD LVCMOS33 } [get_ports { P_LT_QOUT }]; #IO_L23N_T3_35 Sch=jc[1]
+set_property -dict { PACKAGE_PIN F6    IOSTANDARD LVCMOS33 } [get_ports { P_GT_QOUT }]; #IO_L19N_T3_VREF_35 Sch=jc[2]
+set_property -dict { PACKAGE_PIN J2    IOSTANDARD LVCMOS33 } [get_ports { LA }]; #IO_L22N_T3_35 Sch=jc[3]

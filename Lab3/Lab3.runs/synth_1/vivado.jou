@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed Sep 19 20:42:50 2018
-# Process ID: 7028
+# Start of session at: Tue Sep 25 12:00:45 2018
+# Process ID: 1196
 # Current directory: C:/Users/Dexter/Documents/ECE4525/Lab3/Lab3.runs/synth_1
 # Command line: vivado.exe -log Task_Two_Part_Two.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Task_Two_Part_Two.tcl
 # Log file: C:/Users/Dexter/Documents/ECE4525/Lab3/Lab3.runs/synth_1/Task_Two_Part_Two.vds

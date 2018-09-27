@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Dexter/Documents/ECE4525/Lab4/Lab4.sim/sim_1/impl/timing/modelsim
+vEight_Bit_Magnitude_Comparator
+Z1 !s110 1538004984
+!i10b 1
+!s100 WPeZZWk2_bz[alg73YWeN1
+I;;Zol[13II3Z<c`ISa9[h1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1538004983
+Z4 8Eight_Bit_Magnitude_Comparator_time_impl.v
+Z5 FEight_Bit_Magnitude_Comparator_time_impl.v
+L0 18
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1538004984.000000
+Z8 !s107 Eight_Bit_Magnitude_Comparator_time_impl.v|
+Z9 !s90 -64|-incr|-work|xil_defaultlib|Eight_Bit_Magnitude_Comparator_time_impl.v|
+!s101 -O0
+!i113 1
+Z10 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@eight_@bit_@magnitude_@comparator
+vglbl
+R1
+!i10b 1
+!s100 I1S4e:6L`6MNDO7>42gm:0
+IA:_zOSR_0[^]i3hE<8:Z10
+R2
+R0
+R3
+R4
+R5
+L0 497
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10

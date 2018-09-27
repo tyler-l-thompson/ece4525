@@ -1,0 +1,1 @@
+-wto "873f4f950e4f4352825a7070282b59d9" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Seven_Seg_Decoder_behav" "xil_defaultlib.Seven_Seg_Decoder" -log "elaborate.log" 

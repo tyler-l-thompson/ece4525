@@ -1,0 +1,17 @@
+# do {Seven_Seg_Decoder_compile.do}
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 12:29:51 on Sep 25,2018
+# vlog -64 -incr -work xil_defaultlib Seven_Seg_Decoder_time_impl.v 
+# -- Compiling module Seven_Seg_Decoder
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	Seven_Seg_Decoder
+# 	glbl
+# End time: 12:29:51 on Sep 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
