@@ -63,14 +63,7 @@ begin
                 D7 <= 'Z';
               next_state <= read_ready;
             elsif (START = '1' and RW = '0') then
-                D0 <= '1';
-                D1 <= '1';
-                D2 <= '0';
-                D3 <= '1';
-                D4 <= '1';
-                D5 <= '0';
-                D6 <= '1';
-                D7 <= '1';
+                
               next_state <= write_ready;
             else 
               next_state <= idle;
@@ -180,7 +173,14 @@ begin
                 READ <= '1';
                 WRITE <= '0';
                 READY_CTL <= '0'; 
-                
+                D0 <= '1';
+                D1 <= '1';
+                D2 <= '0';
+                D3 <= '1';
+                D4 <= '1';
+                D5 <= '0';
+                D6 <= '1';
+                D7 <= '1';
                 next_state <= writing_2;
                 
               -- ### WRITING 2 ###
@@ -202,7 +202,14 @@ begin
                   READ <= '1';
                   WRITE <= '1';
                   READY_CTL <= '1';
-                  
+                  D0 <= 'Z';
+                  D1 <= 'Z';
+                  D2 <= 'Z';
+                  D3 <= 'Z';
+                  D4 <= 'Z';
+                  D5 <= 'Z';
+                  D6 <= 'Z';
+                  D7 <= 'Z';
                   next_state <= write_done;
                           
                -- ### WRITE DONE ###
