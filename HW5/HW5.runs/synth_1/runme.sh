@@ -6,21 +6,25 @@
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/archive/Xilinx/SDK/2018.2/bin:/archive/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/lin64:/archive/Xilinx/Vivado/2018.2/bin
+  PATH=D:/Xilinx/SDK/2018.2/bin;D:/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2018.2/bin
 else
-  PATH=/archive/Xilinx/SDK/2018.2/bin:/archive/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/lin64:/archive/Xilinx/Vivado/2018.2/bin:$PATH
+  PATH=D:/Xilinx/SDK/2018.2/bin;D:/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2018.2/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/archive/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=
 else
-  LD_LIBRARY_PATH=/archive/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/archive/scripts/ECE4525/HW5/HW5.runs/synth_1'
+HD_PWD='C:/Users/Dexter/Documents/ECE4525/HW5/HW5.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

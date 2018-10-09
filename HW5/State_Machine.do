@@ -8,7 +8,7 @@ force RESET 0
 run 10ns
 
 force RESET 1
-run 10ns
+run 100ns
 
 force A 0
 force B 1

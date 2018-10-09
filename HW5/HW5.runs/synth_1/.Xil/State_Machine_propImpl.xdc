@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/archive/scripts/ECE4525/HW5/HW5.srcs/constrs_1/new/pins_HW5.xdc rfile:../../../HW5.srcs/constrs_1/new/pins_HW5.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Dexter/Documents/ECE4525/HW5/HW5.srcs/constrs_1/new/pins_HW5.xdc rfile:../../../HW5.srcs/constrs_1/new/pins_HW5.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { CLK }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

@@ -1,0 +1,23 @@
+# do {State_Machine_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 17:21:28 on Oct 09,2018
+# vlog -64 -incr -work xil_defaultlib State_Machine_time_impl.v 
+# -- Skipping module State_Machine
+# -- Skipping module glbl
+# 
+# Top level modules:
+# 	State_Machine
+# 	glbl
+# End time: 17:21:28 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1538610884">
-  <File Type="VDS-TIMING-PB" Name="SRAM_Bus_Controller_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="SRAM_Bus_Controller_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="SRAM_Bus_Controller.dcp"/>
   <File Type="RDS-UTIL-PB" Name="SRAM_Bus_Controller_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="SRAM_Bus_Controller_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="SRAM_Bus_Controller_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="SRAM_Bus_Controller.vds"/>
   <File Type="REPORTS-TCL" Name="SRAM_Bus_Controller_reports.tcl"/>
+  <File Type="RDS-RDS" Name="SRAM_Bus_Controller.vds"/>
   <File Type="PA-TCL" Name="SRAM_Bus_Controller.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
