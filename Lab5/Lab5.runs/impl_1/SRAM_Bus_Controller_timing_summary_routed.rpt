@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Wed Oct  3 19:57:25 2018
-| Host         : ferrari running 64-bit Ubuntu 16.04.3 LTS
+| Date         : Mon Oct  8 20:19:39 2018
+| Host         : x2r2 running 64-bit Ubuntu 16.04.5 LTS
 | Command      : report_timing_summary -max_paths 10 -file SRAM_Bus_Controller_timing_summary_routed.rpt -pb SRAM_Bus_Controller_timing_summary_routed.pb -rpx SRAM_Bus_Controller_timing_summary_routed.rpx -warn_on_violation
 | Design       : SRAM_Bus_Controller
 | Device       : 7a100t-csg324
@@ -54,13 +54,15 @@ Table of Contents
 --------------------
  There are 13 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: START (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: RW (HIGH)
 
- There are 6 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[0]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: START (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[0]/Q (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[10]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[11]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[11]/Q (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[12]/Q (HIGH)
 
@@ -80,7 +82,7 @@ Table of Contents
 
  There are 4 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[8]/Q (HIGH)
 
- There are 4 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[9]/Q (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: FSM_onehot_present_state_reg[9]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -95,7 +97,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 19 pins that are not constrained for maximum delay. (HIGH)
+ There are 18 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

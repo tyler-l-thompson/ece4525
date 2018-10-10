@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Wed Oct  3 19:57:25 2018
-| Host             : ferrari running 64-bit Ubuntu 16.04.3 LTS
+| Date             : Mon Oct  8 20:19:39 2018
+| Host             : x2r2 running 64-bit Ubuntu 16.04.5 LTS
 | Command          : report_power -file SRAM_Bus_Controller_power_routed.rpt -pb SRAM_Bus_Controller_power_summary_routed.pb -rpx SRAM_Bus_Controller_power_routed.rpx
 | Design           : SRAM_Bus_Controller
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.999        |
+| Total On-Chip Power (W)  | 0.458        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.895        |
-| Device Static (W)        | 0.104        |
+| Dynamic (W)              | 0.360        |
+| Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 75.9         |
-| Junction Temperature (C) | 34.1         |
+| Max Ambient (C)          | 82.9         |
+| Junction Temperature (C) | 27.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.025 |       41 |       --- |             --- |
-|   LUT as Logic |     0.018 |       17 |     63400 |            0.03 |
+| Slice Logic    |     0.041 |       40 |       --- |             --- |
+|   LUT as Logic |     0.033 |       17 |     63400 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Register     |    <0.001 |       19 |    126800 |            0.01 |
+|   Register     |     0.002 |       18 |    126800 |            0.01 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.073 |       34 |       --- |             --- |
-| I/O            |     1.797 |       21 |       210 |           10.00 |
-| Static Power   |     0.104 |          |           |                 |
-| Total          |     1.999 |          |           |                 |
+| Signals        |     0.067 |       33 |       --- |             --- |
+| I/O            |     0.253 |       21 |       210 |           10.00 |
+| Static Power   |     0.098 |          |           |                 |
+| Total          |     0.458 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +70,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.135 |       0.114 |      0.021 |
-| Vccaux    |       1.800 |     0.084 |       0.065 |      0.019 |
-| Vcco33    |       3.300 |     0.508 |       0.504 |      0.004 |
+| Vccint    |       1.000 |     0.139 |       0.123 |      0.016 |
+| Vccaux    |       1.800 |     0.027 |       0.009 |      0.018 |
+| Vcco33    |       3.300 |     0.071 |       0.067 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,7 +137,7 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| SRAM_Bus_Controller |     1.895 |
+| SRAM_Bus_Controller |     0.360 |
 +---------------------+-----------+
 
 

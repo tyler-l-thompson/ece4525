@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Wed Oct  3 19:55:37 2018
-| Host         : ferrari running 64-bit Ubuntu 16.04.3 LTS
+| Date         : Mon Oct  8 20:17:58 2018
+| Host         : x2r2 running 64-bit Ubuntu 16.04.5 LTS
 | Command      : report_utilization -file SRAM_Bus_Controller_utilization_synth.rpt -pb SRAM_Bus_Controller_utilization_synth.pb
 | Design       : SRAM_Bus_Controller
 | Device       : 7a100tcsg324-1
@@ -33,9 +33,9 @@ Table of Contents
 | Slice LUTs*             |   17 |     0 |     63400 |  0.03 |
 |   LUT as Logic          |   17 |     0 |     63400 |  0.03 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |   19 |     0 |    126800 |  0.01 |
+| Slice Registers         |   18 |     0 |    126800 |  0.01 |
 |   Register as Flip Flop |   13 |     0 |    126800 |  0.01 |
-|   Register as Latch     |    6 |     0 |    126800 | <0.01 |
+|   Register as Latch     |    5 |     0 |    126800 | <0.01 |
 | F7 Muxes                |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
@@ -55,7 +55,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 6     |          Yes |           - |        Reset |
+| 5     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 13    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -149,13 +149,13 @@ Table of Contents
 | FDRE     |   13 |        Flop & Latch |
 | OBUF     |    9 |                  IO |
 | OBUFT    |    8 |                  IO |
-| LDCE     |    6 |        Flop & Latch |
-| LUT2     |    5 |                 LUT |
+| LDCE     |    5 |        Flop & Latch |
+| LUT4     |    4 |                 LUT |
 | LUT3     |    4 |                 LUT |
 | IBUF     |    4 |                  IO |
-| LUT4     |    3 |                 LUT |
+| LUT5     |    3 |                 LUT |
+| LUT2     |    3 |                 LUT |
 | LUT6     |    2 |                 LUT |
-| LUT5     |    2 |                 LUT |
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+

@@ -7,16 +7,16 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/archive/XilinxLinux/SDK/2018.2/bin:/archive/XilinxLinux/Vivado/2018.2/ids_lite/ISE/bin/lin64:/archive/XilinxLinux/Vivado/2018.2/bin
+  PATH=/archive/Xilinx/SDK/2018.2/bin:/archive/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/lin64:/archive/Xilinx/Vivado/2018.2/bin
 else
-  PATH=/archive/XilinxLinux/SDK/2018.2/bin:/archive/XilinxLinux/Vivado/2018.2/ids_lite/ISE/bin/lin64:/archive/XilinxLinux/Vivado/2018.2/bin:$PATH
+  PATH=/archive/Xilinx/SDK/2018.2/bin:/archive/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/lin64:/archive/Xilinx/Vivado/2018.2/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/archive/XilinxLinux/Vivado/2018.2/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/archive/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/archive/XilinxLinux/Vivado/2018.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/archive/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
@@ -37,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log SRAM_Bus_Controller.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SRAM_Bus_Controller.tcl -notrace
 
 
