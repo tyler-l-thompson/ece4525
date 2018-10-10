@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539044286">
+=======
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1538610884">
+  <File Type="BITSTR-NKY" Name="SRAM_Bus_Controller.nky"/>
+>>>>>>> 25a22e1274ee9a5c1988cd17be439f648b249d98
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BG-DRC" Name="SRAM_Bus_Controller.drc"/>
-  <File Type="BG-BGN" Name="SRAM_Bus_Controller.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SRAM_Bus_Controller_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="SRAM_Bus_Controller.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BG-DRC" Name="SRAM_Bus_Controller.drc"/>
+  <File Type="ROUTE-DRC-RPX" Name="SRAM_Bus_Controller_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="SRAM_Bus_Controller.ltx"/>
+  <File Type="BG-BGN" Name="SRAM_Bus_Controller.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SRAM_Bus_Controller_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="SRAM_Bus_Controller.mmi"/>
   <File Type="BITSTR-BMM" Name="SRAM_Bus_Controller_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="SRAM_Bus_Controller.nky"/>
   <File Type="BITSTR-RBT" Name="SRAM_Bus_Controller.rbt"/>
   <File Type="BITSTR-MSK" Name="SRAM_Bus_Controller.msk"/>
   <File Type="BG-BIN" Name="SRAM_Bus_Controller.bin"/>
   <File Type="BG-BIT" Name="SRAM_Bus_Controller.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SRAM_Bus_Controller_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SRAM_Bus_Controller_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SRAM_Bus_Controller_bus_skew_postroute_physopted.rpt"/>
+  <File Type="ROUTE-CLK" Name="SRAM_Bus_Controller_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="SRAM_Bus_Controller.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SRAM_Bus_Controller_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SRAM_Bus_Controller_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SRAM_Bus_Controller_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SRAM_Bus_Controller_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="SRAM_Bus_Controller_postroute_physopt.dcp"/>
   <File Type="ROUTE-BUS-SKEW" Name="SRAM_Bus_Controller_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="SRAM_Bus_Controller_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="SRAM_Bus_Controller_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-TIMING-RPX" Name="SRAM_Bus_Controller_timing_summary_routed.rpx"/>
   <File Type="ROUTE-TIMING-PB" Name="SRAM_Bus_Controller_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="SRAM_Bus_Controller_timing_summary_routed.rpt"/>
@@ -33,38 +32,24 @@
   <File Type="ROUTE-PWR-RPX" Name="SRAM_Bus_Controller_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="SRAM_Bus_Controller_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR" Name="SRAM_Bus_Controller_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SRAM_Bus_Controller_methodology_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SRAM_Bus_Controller_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="SRAM_Bus_Controller_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="SRAM_Bus_Controller_drc_routed.rpx"/>
   <File Type="ROUTE-DRC-PB" Name="SRAM_Bus_Controller_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="SRAM_Bus_Controller_drc_routed.rpt"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="SRAM_Bus_Controller_routed_bb.dcp"/>
   <File Type="ROUTE-DCP" Name="SRAM_Bus_Controller_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="SRAM_Bus_Controller_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="SRAM_Bus_Controller_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="SRAM_Bus_Controller_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="SRAM_Bus_Controller_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="SRAM_Bus_Controller_timing_summary_postplace_pwropted.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="SRAM_Bus_Controller_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="SRAM_Bus_Controller_timing_summary_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="SRAM_Bus_Controller_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="SRAM_Bus_Controller_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-CTRL" Name="SRAM_Bus_Controller_control_sets_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="SRAM_Bus_Controller_utilization_placed.pb"/>
   <File Type="PLACE-UTIL" Name="SRAM_Bus_Controller_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="SRAM_Bus_Controller_clock_utilization_placed.rpt"/>
   <File Type="PLACE-IO" Name="SRAM_Bus_Controller_io_placed.rpt"/>
   <File Type="PLACE-DCP" Name="SRAM_Bus_Controller_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="SRAM_Bus_Controller_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="SRAM_Bus_Controller_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="SRAM_Bus_Controller_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="SRAM_Bus_Controller_timing_summary_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="SRAM_Bus_Controller.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="SRAM_Bus_Controller_methodology_drc_opted.rpt"/>
   <File Type="OPT-DRC" Name="SRAM_Bus_Controller_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="SRAM_Bus_Controller_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="SRAM_Bus_Controller_timing_summary_init.rpt"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="SRAM_Bus_Controller_bus_skew_routed.rpx"/>
   <File Type="REPORTS-TCL" Name="SRAM_Bus_Controller_reports.tcl"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="SRAM_Bus_Controller_bus_skew_routed.pb"/>

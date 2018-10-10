@@ -202,14 +202,7 @@ begin
                   READ <= '1';
                   WRITE <= '1';
                   READY_CTL <= '1';
-                  D0 <= 'Z';
-                  D1 <= 'Z';
-                  D2 <= 'Z';
-                  D3 <= 'Z';
-                  D4 <= 'Z';
-                  D5 <= 'Z';
-                  D6 <= 'Z';
-                  D7 <= 'Z';
+                  
                   next_state <= write_done;
                           
                -- ### WRITE DONE ###
