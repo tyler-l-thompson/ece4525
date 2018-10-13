@@ -11,8 +11,17 @@ force RW 0 @10ns
 
 force READY 0 @70ns
 
-force START 0 @90ns
+
 
 force READY 1 @110ns
 
-run 180ns
+force START 1 @170ns
+force RW 0 @170ns
+
+force READY 0 @230ns
+
+force START 0 @250ns
+
+force READY 1 @270ns
+
+run 300ns
