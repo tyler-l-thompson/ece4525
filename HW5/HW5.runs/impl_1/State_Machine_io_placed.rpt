@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
----------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date                      : Tue Oct  9 17:15:56 2018
-| Host                      : Ferrari running 64-bit Service Pack 1  (build 7601)
+-------------------------------------------------------------------------------------------------
+| Tool Version              : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date                      : Tue Oct  9 22:11:35 2018
+| Host                      : x2r2 running 64-bit Ubuntu 16.04.5 LTS
 | Command                   : report_io -file State_Machine_io_placed.rpt
 | Design                    : State_Machine
 | Device                    : xc7a100t
@@ -10,7 +10,7 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 | Package                   : csg324
 | Package Version           : FINAL 2012-07-17
 | Package Pin Delay Version : VERS. 2.0 2012-07-17
----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 IO Information
 

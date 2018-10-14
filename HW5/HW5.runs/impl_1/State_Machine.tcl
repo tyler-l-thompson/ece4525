@@ -60,6 +60,8 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -ruleid {1}  -id {IP_Flow 19-3899}  -string {{WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.}}  -suppress 
 set_msg_config  -ruleid {2}  -id {Constraints 18-5210}  -string {{WARNING: [Constraints 18-5210] No constraint will be written out.}}  -suppress 
 set_msg_config  -ruleid {3}  -id {DRC CFGBVS-1}  -string {{WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
@@ -76,9 +78,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param simulator.modelsimInstallPath D:/Modeltech_pe_edu_10.4a/win32pe_edu
+  set_param xicom.use_bs_reader 1
   open_checkpoint State_Machine_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Dexter/Documents/ECE4525/HW5/HW5.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/dexter/scripts/ECE4525/HW5/HW5.cache/wt [current_project]
   catch { write_mem_info -force State_Machine.mmi }
   write_bitstream -force State_Machine.bit 
   catch {write_debug_probes -quiet -force State_Machine}

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Wed Oct 10 21:38:34 2018
-| Host             : ferrari running 64-bit Ubuntu 16.04.3 LTS
+| Date             : Sun Oct 14 17:58:17 2018
+| Host             : x2r2 running 64-bit Ubuntu 16.04.5 LTS
 | Command          : report_power -file SRAM_Bus_Controller_power_routed.rpt -pb SRAM_Bus_Controller_power_summary_routed.pb -rpx SRAM_Bus_Controller_power_routed.rpx
 | Design           : SRAM_Bus_Controller
 | Device           : xc7a100tcsg324-1
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 20.847 (Junction temp exceeded!) |
-| Design Power Budget (W)  | Unspecified*                     |
-| Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 20.151                           |
-| Device Static (W)        | 0.696                            |
-| Effective TJA (C/W)      | 4.6                              |
-| Max Ambient (C)          | 0.0                              |
-| Junction Temperature (C) | 120.1                            |
-| Confidence Level         | Low                              |
-| Setting File             | ---                              |
-| Simulation Activity File | ---                              |
-| Design Nets Matched      | NA                               |
-+--------------------------+----------------------------------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 11.636       |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 11.409       |
+| Device Static (W)        | 0.228        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 31.9         |
+| Junction Temperature (C) | 78.1         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.143 |       32 |       --- |             --- |
-|   LUT as Logic |     0.134 |       17 |     63400 |            0.03 |
+| Slice Logic    |     0.159 |       35 |       --- |             --- |
+|   LUT as Logic |     0.150 |       21 |     63400 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Register     |     0.003 |        8 |    126800 |           <0.01 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.345 |       27 |       --- |             --- |
-| I/O            |    19.663 |       20 |       210 |            9.52 |
-| Static Power   |     0.696 |          |           |                 |
-| Total          |    20.847 |          |           |                 |
+| Signals        |     0.246 |       30 |       --- |             --- |
+| I/O            |    11.004 |       20 |       210 |            9.52 |
+| Static Power   |     0.228 |          |           |                 |
+| Total          |    11.636 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,16 +70,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.984 |       0.500 |      0.484 |
-| Vccaux    |       1.800 |     0.802 |       0.720 |      0.082 |
-| Vcco33    |       3.300 |     5.566 |       5.562 |      0.004 |
+| Vccint    |       1.000 |     0.536 |       0.417 |      0.119 |
+| Vccaux    |       1.800 |     0.434 |       0.403 |      0.031 |
+| Vcco33    |       3.300 |     3.115 |       3.111 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.015 |       0.000 |      0.015 |
+| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -137,7 +137,7 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| SRAM_Bus_Controller |    20.151 |
+| SRAM_Bus_Controller |    11.409 |
 +---------------------+-----------+
 
 

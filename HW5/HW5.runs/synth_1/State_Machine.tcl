@@ -17,7 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param simulator.modelsimInstallPath D:/Modeltech_pe_edu_10.4a/win32pe_edu
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -ruleid {1}  -id {IP_Flow 19-3899}  -string {{WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.}}  -suppress 
 set_msg_config  -ruleid {2}  -id {Constraints 18-5210}  -string {{WARNING: [Constraints 18-5210] No constraint will be written out.}}  -suppress 
 set_msg_config  -ruleid {3}  -id {DRC CFGBVS-1}  -string {{WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
@@ -34,13 +36,13 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Dexter/Documents/ECE4525/HW5/HW5.cache/wt [current_project]
-set_property parent.project_path C:/Users/Dexter/Documents/ECE4525/HW5/HW5.xpr [current_project]
+set_property webtalk.parent_dir /home/dexter/scripts/ECE4525/HW5/HW5.cache/wt [current_project]
+set_property parent.project_path /home/dexter/scripts/ECE4525/HW5/HW5.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/Dexter/Documents/ECE4525/HW5/HW5.cache/ip [current_project]
+set_property ip_output_repo /home/dexter/scripts/ECE4525/HW5/HW5.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/Dexter/Documents/ECE4525/HW5/HW5.srcs/sources_1/new/State_Machine.vhd
+read_vhdl -library xil_defaultlib /home/dexter/scripts/ECE4525/HW5/HW5.srcs/sources_1/new/State_Machine.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -49,8 +51,8 @@ read_vhdl -library xil_defaultlib C:/Users/Dexter/Documents/ECE4525/HW5/HW5.srcs
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Dexter/Documents/ECE4525/HW5/HW5.srcs/constrs_1/new/pins_HW5.xdc
-set_property used_in_implementation false [get_files C:/Users/Dexter/Documents/ECE4525/HW5/HW5.srcs/constrs_1/new/pins_HW5.xdc]
+read_xdc /home/dexter/scripts/ECE4525/HW5/HW5.srcs/constrs_1/new/pins_HW5.xdc
+set_property used_in_implementation false [get_files /home/dexter/scripts/ECE4525/HW5/HW5.srcs/constrs_1/new/pins_HW5.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

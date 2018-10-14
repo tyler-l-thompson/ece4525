@@ -49,15 +49,20 @@ begin
                 
             
             
-            write_count <= write_count;
-            read_count <= read_count;  
+              
                    
             if ( START = '1' ) and ( read_count /= write_count ) then
                 next_state <= read_ready;
+                write_count <= write_count;
+                read_count <= read_count;
             elsif ( START = '1' ) and ( read_count = write_count ) then
                 next_state <= write_ready;
+                write_count <= write_count;
+                read_count <= read_count;
             else
                 next_state <= idle;
+                write_count <= "00";
+                read_count <= "00";
             end if;     
 --            if (START = '1' and RW = '1') then
 --              next_state <= read_ready;
@@ -75,13 +80,13 @@ begin
                 READY_CTL <= '1';
                 D <= "ZZZZZZZZ";
                 -- place address on output
-                if ( write_count = "00" ) then
+                if ( read_count = "00" ) then
                     A <= "00000";      
-                elsif ( write_count = "01" ) then
+                elsif ( read_count = "01" ) then
                     A <= "01010";  
-                elsif ( write_count = "10" ) then
+                elsif ( read_count = "10" ) then
                     A <= "11111";
-                elsif ( write_count = "11" ) then
+                elsif ( read_count = "11" ) then
                     A <= "10101";
                 else A <= "00000";
                 end if;
@@ -96,16 +101,16 @@ begin
                 WRITE <= '1';
                 READY_CTL <= '1';
                 D <= "ZZZZZZZZ";
-                if ( write_count = "00" ) then
-                                    A <= "00000";      
-                                elsif ( write_count = "01" ) then
-                                    A <= "01010";  
-                                elsif ( write_count = "10" ) then
-                                    A <= "11111";
-                                elsif ( write_count = "11" ) then
-                                    A <= "10101";
-                                else A <= "00000";
-                                end if;
+                if ( read_count = "00" ) then
+                    A <= "00000";      
+                elsif ( read_count = "01" ) then
+                    A <= "01010";  
+                elsif ( read_count = "10" ) then
+                    A <= "11111";
+                elsif ( read_count = "11" ) then
+                    A <= "10101";
+                else A <= "00000";
+                end if;
                 write_count <= write_count;
                 read_count <= read_count;
                 next_state <= reading_1;
@@ -117,16 +122,16 @@ begin
                 WRITE <= '1';
                 READY_CTL <= '0'; 
                 D <= "ZZZZZZZZ";
-                if ( write_count = "00" ) then
-                                    A <= "00000";      
-                                elsif ( write_count = "01" ) then
-                                    A <= "01010";  
-                                elsif ( write_count = "10" ) then
-                                    A <= "11111";
-                                elsif ( write_count = "11" ) then
-                                    A <= "10101";
-                                else A <= "00000";
-                                end if;
+                if ( read_count = "00" ) then
+                    A <= "00000";      
+                elsif ( read_count = "01" ) then
+                    A <= "01010";  
+                elsif ( read_count = "10" ) then
+                    A <= "11111";
+                elsif ( read_count = "11" ) then
+                    A <= "10101";
+                else A <= "00000";
+                end if;
                 write_count <= write_count;
                 read_count <= read_count;
                 next_state <= reading_2;
@@ -138,16 +143,16 @@ begin
                 WRITE <= '1';
                 READY_CTL <= '0'; 
                 D <= "ZZZZZZZZ";
-                if ( write_count = "00" ) then
-                                    A <= "00000";      
-                                elsif ( write_count = "01" ) then
-                                    A <= "01010";  
-                                elsif ( write_count = "10" ) then
-                                    A <= "11111";
-                                elsif ( write_count = "11" ) then
-                                    A <= "10101";
-                                else A <= "00000";
-                                end if;
+                if ( read_count = "00" ) then
+                    A <= "00000";      
+                elsif ( read_count = "01" ) then
+                    A <= "01010";  
+                elsif ( read_count = "10" ) then
+                    A <= "11111";
+                elsif ( read_count = "11" ) then
+                    A <= "10101";
+                else A <= "00000";
+                end if;
                 write_count <= write_count;
                 read_count <= read_count;
                 if (READY = '1') then
@@ -163,16 +168,16 @@ begin
                   WRITE <= '1';
                   READY_CTL <= '1';
                   D <= "ZZZZZZZZ";
-                  if ( write_count = "00" ) then
-                                      A <= "00000";      
-                                  elsif ( write_count = "01" ) then
-                                      A <= "01010";  
-                                  elsif ( write_count = "10" ) then
-                                      A <= "11111";
-                                  elsif ( write_count = "11" ) then
-                                      A <= "10101";
-                                  else A <= "00000";
-                                  end if;
+                  if ( read_count = "00" ) then
+                      A <= "00000";      
+                  elsif ( read_count = "01" ) then
+                      A <= "01010";  
+                  elsif ( read_count = "10" ) then
+                      A <= "11111";
+                  elsif ( read_count = "11" ) then
+                      A <= "10101";
+                  else A <= "00000";
+                  end if;
                
                   write_count <= write_count;
                   read_count <= read_count;
@@ -185,16 +190,16 @@ begin
                   WRITE <= '1';
                   READY_CTL <= '1'; 
                   D <= "ZZZZZZZZ";
-                  if ( write_count = "00" ) then
-                                      A <= "00000";      
-                                  elsif ( write_count = "01" ) then
-                                      A <= "01010";  
-                                  elsif ( write_count = "10" ) then
-                                      A <= "11111";
-                                  elsif ( write_count = "11" ) then
-                                      A <= "10101";
-                                  else A <= "00000";
-                                  end if;
+                  if ( read_count = "00" ) then
+                      A <= "00000";      
+                  elsif ( read_count = "01" ) then
+                      A <= "01010";  
+                  elsif ( read_count = "10" ) then
+                      A <= "11111";
+                  elsif ( read_count = "11" ) then
+                      A <= "10101";
+                  else A <= "00000";
+                  end if;
                   write_count <= write_count;
                   if ( read_count = "11" ) then
                     read_count <= "00";
@@ -214,17 +219,16 @@ begin
                 D <= "ZZZZZZZZ";
                 -- place address on output
                 if ( write_count = "00" ) then
-                                    A <= "00000";      
-                                elsif ( write_count = "01" ) then
-                                    A <= "01010";  
-                                elsif ( write_count = "10" ) then
-                                    A <= "11111";
-                                elsif ( write_count = "11" ) then
-                                    A <= "10101";
-                                else A <= "00000";
-                                end if;
-                
-                   
+                    A <= "00000";      
+                elsif ( write_count = "01" ) then
+                    A <= "01010";  
+                elsif ( write_count = "10" ) then
+                    A <= "11111";
+                elsif ( write_count = "11" ) then
+                    A <= "10101";
+                else A <= "00000";
+                end if;
+                                  
                 write_count <= write_count;
                 read_count <= read_count;
                 next_state <= write_start;
@@ -237,15 +241,15 @@ begin
                 READY_CTL <= '1';
                 D <= "ZZZZZZZZ";
                 if ( write_count = "00" ) then
-                                    A <= "00000";      
-                                elsif ( write_count = "01" ) then
-                                    A <= "01010";  
-                                elsif ( write_count = "10" ) then
-                                    A <= "11111";
-                                elsif ( write_count = "11" ) then
-                                    A <= "10101";
-                                else A <= "00000";
-                                end if;
+                    A <= "00000";      
+                elsif ( write_count = "01" ) then
+                    A <= "01010";  
+                elsif ( write_count = "10" ) then
+                    A <= "11111";
+                elsif ( write_count = "11" ) then
+                    A <= "10101";
+                else A <= "00000";
+                end if;
                 write_count <= write_count;
                 read_count <= read_count;
                 next_state <= writing_1;
@@ -284,21 +288,21 @@ begin
                 WRITE <= '0';
                 READY_CTL <= '0'; 
                 if ( write_count = "00" ) then
-                                    A <= "00000";
-                                    D <= "10101010";      
-                                elsif ( write_count = "01" ) then
-                                    A <= "01010"; 
-                                    D <= "00001111"; 
-                                elsif ( write_count = "10" ) then
-                                    A <= "11111";
-                                    D <= "11110000";
-                                elsif ( write_count = "11" ) then
-                                    A <= "10101";
-                                    D <= "01010101";
-                                else 
-                                    A <= "00000";
-                                    D <= "00000000";
-                                end if;
+                    A <= "00000";
+                    D <= "10101010";      
+                elsif ( write_count = "01" ) then
+                    A <= "01010"; 
+                    D <= "00001111"; 
+                elsif ( write_count = "10" ) then
+                    A <= "11111";
+                    D <= "11110000";
+                elsif ( write_count = "11" ) then
+                    A <= "10101";
+                    D <= "01010101";
+                else 
+                    A <= "00000";
+                    D <= "00000000";
+                end if;
                 write_count <= write_count;
                 read_count <= read_count;
                 if (READY = '1') then
@@ -314,21 +318,21 @@ begin
                   WRITE <= '1';
                   READY_CTL <= '1';
                  if ( write_count = "00" ) then
-                                      A <= "00000";
-                                      D <= "10101010";      
-                                  elsif ( write_count = "01" ) then
-                                      A <= "01010"; 
-                                      D <= "00001111"; 
-                                  elsif ( write_count = "10" ) then
-                                      A <= "11111";
-                                      D <= "11110000";
-                                  elsif ( write_count = "11" ) then
-                                      A <= "10101";
-                                      D <= "01010101";
-                                  else 
-                                      A <= "00000";
-                                      D <= "00000000";
-                                  end if;
+                      A <= "00000";
+                      D <= "10101010";      
+                  elsif ( write_count = "01" ) then
+                      A <= "01010"; 
+                      D <= "00001111"; 
+                  elsif ( write_count = "10" ) then
+                      A <= "11111";
+                      D <= "11110000";
+                  elsif ( write_count = "11" ) then
+                      A <= "10101";
+                      D <= "01010101";
+                  else 
+                      A <= "00000";
+                      D <= "00000000";
+                  end if;
                   write_count <= write_count;
                   read_count <= read_count;
                   next_state <= write_done;
@@ -341,15 +345,15 @@ begin
                   READY_CTL <= '1'; 
                   D <= "ZZZZZZZZ";
                   if ( write_count = "00" ) then
-                                      A <= "00000";      
-                                  elsif ( write_count = "01" ) then
-                                      A <= "01010";  
-                                  elsif ( write_count = "10" ) then
-                                      A <= "11111";
-                                  elsif ( write_count = "11" ) then
-                                      A <= "10101";
-                                  else A <= "00000";
-                                  end if;
+                      A <= "00000";      
+                  elsif ( write_count = "01" ) then
+                      A <= "01010";  
+                  elsif ( write_count = "10" ) then
+                      A <= "11111";
+                  elsif ( write_count = "11" ) then
+                      A <= "10101";
+                  else A <= "00000";
+                  end if;
                   if ( write_count = "11" ) then
                     write_count <= "00";
                   else
@@ -376,8 +380,8 @@ begin
 
     clk_process: process
     begin
-        wait until (CLK'event and CLK = '1');
-        present_state <= next_state;
+        wait until (CLK'event and CLK = '1');      
+            present_state <= next_state;
     end process clk_process;
 
 end Behavioral;
