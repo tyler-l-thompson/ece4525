@@ -1,4 +1,5 @@
 #-----------------------------------------------------------
+<<<<<<< HEAD
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
@@ -8,5 +9,16 @@
 # Command line: vivado.exe -log SRAM_Bus_Controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SRAM_Bus_Controller.tcl
 # Log file: C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.runs/synth_1/SRAM_Bus_Controller.vds
 # Journal file: C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.runs/synth_1\vivado.jou
+=======
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Oct 14 21:44:23 2018
+# Process ID: 20858
+# Current directory: /home/dexter/scripts/ECE4525/Lab5/Lab5.runs/synth_1
+# Command line: vivado -log SRAM_Bus_Controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SRAM_Bus_Controller.tcl
+# Log file: /home/dexter/scripts/ECE4525/Lab5/Lab5.runs/synth_1/SRAM_Bus_Controller.vds
+# Journal file: /home/dexter/scripts/ECE4525/Lab5/Lab5.runs/synth_1/vivado.jou
+>>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 #-----------------------------------------------------------
 source SRAM_Bus_Controller.tcl -notrace

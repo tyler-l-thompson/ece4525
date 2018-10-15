@@ -1,8 +1,14 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
 | Date         : Mon Oct 15 10:32:31 2018
 | Host         : Ferrari running 64-bit Service Pack 1  (build 7601)
+=======
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sun Oct 14 21:46:38 2018
+| Host         : x2r2 running 64-bit Ubuntu 16.04.5 LTS
+>>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 | Command      : report_bus_skew -warn_on_violation -file SRAM_Bus_Controller_bus_skew_routed.rpt -pb SRAM_Bus_Controller_bus_skew_routed.pb -rpx SRAM_Bus_Controller_bus_skew_routed.rpx
 | Design       : SRAM_Bus_Controller
 | Device       : 7a100t-csg324

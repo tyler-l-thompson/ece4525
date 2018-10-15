@@ -60,10 +60,18 @@ proc step_failed { step } {
   close $ch
 }
 
+<<<<<<< HEAD
+=======
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config  -ruleid {1}  -id {Common 17-55}  -string {{CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.}}  -suppress 
+>>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
+<<<<<<< HEAD
   create_msg_db init_design.pb
   set_param simulator.modelsimInstallPath D:/Modeltech_pe_edu_10.4a/win32pe_edu
   create_project -in_memory -part xc7a100tcsg324-1
@@ -77,6 +85,17 @@ set rc [catch {
   read_xdc C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc
   link_design -top SRAM_Bus_Controller -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
+=======
+  create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
+  open_checkpoint SRAM_Bus_Controller_routed.dcp
+  set_property webtalk.parent_dir /home/dexter/scripts/ECE4525/Lab5/Lab5.cache/wt [current_project]
+  catch { write_mem_info -force SRAM_Bus_Controller.mmi }
+  write_bitstream -force SRAM_Bus_Controller.bit 
+  catch {write_debug_probes -quiet -force SRAM_Bus_Controller}
+  catch {file copy -force SRAM_Bus_Controller.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+>>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 } RESULT]
 if {$rc} {
   step_failed init_design

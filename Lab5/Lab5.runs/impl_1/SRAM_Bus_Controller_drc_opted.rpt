@@ -1,8 +1,14 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
 | Date         : Mon Oct 15 10:31:52 2018
 | Host         : Ferrari running 64-bit Service Pack 1  (build 7601)
+=======
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sun Oct 14 21:46:05 2018
+| Host         : x2r2 running 64-bit Ubuntu 16.04.5 LTS
+>>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 | Command      : report_drc -file SRAM_Bus_Controller_drc_opted.rpt -pb SRAM_Bus_Controller_drc_opted.pb -rpx SRAM_Bus_Controller_drc_opted.rpx
 | Design       : SRAM_Bus_Controller
 | Device       : xc7a100tcsg324-1
@@ -24,12 +30,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 10
+             Violations found: 9
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PLCK-12  | Warning  | Clock Placer Checks                                 | 1          |
 | RPBF-3   | Warning  | IO port buffering is incomplete                     | 8          |
 +----------+----------+-----------------------------------------------------+------------+
 
@@ -46,17 +51,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-PLCK-12#1 Warning
-Clock Placer Checks  
-Poor placement for routing between an IO pin and BUFG. 
-Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
- This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
-
-	CLK_IBUF_inst (IBUF.O) is locked to C17
-	CLK_IBUF_BUFG_inst (BUFG.I) cannot be placed
-
 Related violations: <none>
 
 RPBF-3#1 Warning

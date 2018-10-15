@@ -1,8 +1,14 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
 | Date         : Mon Oct 15 10:31:55 2018
 | Host         : Ferrari running 64-bit Service Pack 1  (build 7601)
+=======
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sun Oct 14 21:46:10 2018
+| Host         : x2r2 running 64-bit Ubuntu 16.04.5 LTS
+>>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 | Command      : report_control_sets -verbose -file SRAM_Bus_Controller_control_sets_placed.rpt
 | Design       : SRAM_Bus_Controller
 | Device       : xc7a100t
@@ -23,8 +29,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     3 |
-| Unused register locations in slices containing registers |     8 |
+| Number of unique control sets                            |     1 |
+| Unused register locations in slices containing registers |     0 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +40,7 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            2 |
-|      8 |            1 |
+|    16+ |            1 |
 +--------+--------------+
 
 
@@ -45,7 +50,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              16 |            5 |
+| No           | No                    | No                     |              16 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -57,12 +62,10 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------------+---------------+------------------+------------------+----------------+
-|         Clock Signal        | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+-----------------------------+---------------+------------------+------------------+----------------+
-|  read_count_reg[1]_i_2_n_0  |               |                  |                2 |              4 |
-|  write_count_reg[1]_i_2_n_0 |               |                  |                1 |              4 |
-|  CLK_IBUF_BUFG              |               |                  |                2 |              8 |
-+-----------------------------+---------------+------------------+------------------+----------------+
++----------------+---------------+------------------+------------------+----------------+
+|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+---------------+------------------+------------------+----------------+
+|  CLK_IBUF_BUFG |               |                  |                4 |             16 |
++----------------+---------------+------------------+------------------+----------------+
 
 
