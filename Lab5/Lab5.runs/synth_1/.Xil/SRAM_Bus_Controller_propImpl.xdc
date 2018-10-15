@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc rfile:../../../Lab5.srcs/constrs_1/new/pins_lab5.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc rfile:../../../Lab5.srcs/constrs_1/new/pins_lab5.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets CLK_IBUF]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]

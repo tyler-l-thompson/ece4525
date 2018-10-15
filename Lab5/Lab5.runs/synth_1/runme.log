@@ -3,9 +3,9 @@
     with args -log SRAM_Bus_Controller.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SRAM_Bus_Controller.tcl
 
 
-****** Vivado v2018.2 (64-bit)
-  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
-  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source SRAM_Bus_Controller.tcl -notrace
@@ -14,17 +14,17 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18524 
+INFO: Helper process launched with PID 2904 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1258.445 ; gain = 79.832 ; free physical = 11121 ; free virtual = 43861
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 353.508 ; gain = 97.031
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'SRAM_Bus_Controller' [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:28]
-WARNING: [Synth 8-614] signal 'read_count' is read in the process but is not in the sensitivity list [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:38]
-WARNING: [Synth 8-614] signal 'write_count' is read in the process but is not in the sensitivity list [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'SRAM_Bus_Controller' (1#1) [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'SRAM_Bus_Controller' [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:28]
+WARNING: [Synth 8-614] signal 'read_count' is read in the process but is not in the sensitivity list [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:38]
+WARNING: [Synth 8-614] signal 'write_count' is read in the process but is not in the sensitivity list [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SRAM_Bus_Controller' (1#1) [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:28]
 WARNING: [Synth 8-3331] design SRAM_Bus_Controller has unconnected port RW
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1303.070 ; gain = 124.457 ; free physical = 11132 ; free virtual = 43872
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.152 ; gain = 148.676
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -37,44 +37,44 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1303.070 ; gain = 124.457 ; free physical = 11131 ; free virtual = 43872
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.152 ; gain = 148.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1303.070 ; gain = 124.457 ; free physical = 11131 ; free virtual = 43872
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.152 ; gain = 148.676
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc]
-WARNING: [Vivado 12-507] No nets matched 'CLK_IBUF'. [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc:4]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc:4]
+Parsing XDC File [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc]
+WARNING: [Vivado 12-507] No nets matched 'CLK_IBUF'. [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc:4]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SRAM_Bus_Controller_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SRAM_Bus_Controller_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/SRAM_Bus_Controller_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1651.875 ; gain = 0.000 ; free physical = 10907 ; free virtual = 43647
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 726.547 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10973 ; free virtual = 43713
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 726.547 ; gain = 470.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10973 ; free virtual = 43713
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 726.547 ; gain = 470.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10975 ; free virtual = 43715
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 726.547 ; gain = 470.070
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'SRAM_Bus_Controller'
 INFO: [Synth 8-5544] ROM "D_reg0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -109,10 +109,10 @@ INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because addre
               write_done |                             1100 |                             1100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'SRAM_Bus_Controller'
-WARNING: [Synth 8-327] inferring latch for variable 'write_count_reg' [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:54]
-WARNING: [Synth 8-327] inferring latch for variable 'read_count_reg' [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'write_count_reg' [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'read_count_reg' [C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/sources_1/new/SRAM_Bus_Controller.vhd:54]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10963 ; free virtual = 43704
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 726.547 ; gain = 470.070
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -176,7 +176,7 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-5544] ROM "D2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 WARNING: [Synth 8-3331] design SRAM_Bus_Controller has unconnected port RW
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10953 ; free virtual = 43695
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 726.547 ; gain = 470.070
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -188,13 +188,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10824 ; free virtual = 43566
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 749.832 ; gain = 493.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10824 ; free virtual = 43566
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 749.926 ; gain = 493.449
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -206,7 +206,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10823 ; free virtual = 43565
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 759.988 ; gain = 503.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -230,7 +230,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10823 ; free virtual = 43565
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 759.988 ; gain = 503.512
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -243,7 +243,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10823 ; free virtual = 43565
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 759.988 ; gain = 503.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -255,25 +255,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10823 ; free virtual = 43565
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 759.988 ; gain = 503.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10823 ; free virtual = 43565
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 759.988 ; gain = 503.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10823 ; free virtual = 43565
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 759.988 ; gain = 503.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10823 ; free virtual = 43565
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 759.988 ; gain = 503.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -310,11 +310,11 @@ Report Instance Areas:
 |1     |top      |       |    52|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10823 ; free virtual = 43565
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 759.988 ; gain = 503.512
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1651.875 ; gain = 124.457 ; free physical = 10877 ; free virtual = 43620
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 1651.875 ; gain = 473.262 ; free physical = 10877 ; free virtual = 43620
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 759.988 ; gain = 182.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 759.988 ; gain = 503.512
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -327,9 +327,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 31 Infos, 7 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1657.875 ; gain = 479.430 ; free physical = 10875 ; free virtual = 43617
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 772.336 ; gain = 529.016
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint '/home/dexter/scripts/ECE4525/Lab5/Lab5.runs/synth_1/SRAM_Bus_Controller.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.runs/synth_1/SRAM_Bus_Controller.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SRAM_Bus_Controller_utilization_synth.rpt -pb SRAM_Bus_Controller_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1681.887 ; gain = 0.000 ; free physical = 10876 ; free virtual = 43618
-INFO: [Common 17-206] Exiting Vivado at Sun Oct 14 17:56:46 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 772.336 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 15 10:31:15 2018...
