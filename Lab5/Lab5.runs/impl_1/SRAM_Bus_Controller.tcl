@@ -62,11 +62,14 @@ proc step_failed { step } {
 
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config  -ruleid {1}  -id {Common 17-55}  -string {{CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.}}  -suppress 
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   open_checkpoint SRAM_Bus_Controller_routed.dcp
   set_property webtalk.parent_dir /home/dexter/scripts/ECE4525/Lab5/Lab5.cache/wt [current_project]
   catch { write_mem_info -force SRAM_Bus_Controller.mmi }
