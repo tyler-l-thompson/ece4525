@@ -98,7 +98,7 @@ begin
 
 
 
-    clk_process: process(CLK)
+    clk_process: process(CLK, CLR, SL_SER, SR_SER)
     begin
         if ( CLR = '0' ) then
              shift_data <= "0000";

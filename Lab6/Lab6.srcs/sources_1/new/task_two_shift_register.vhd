@@ -105,15 +105,16 @@ begin
         end case;                                         
     end process serial_add;                               
                                                           
-    clk_process: process                                  
+    clk_process: process(CLK, RESET, next_state)                               
     begin                                                 
         if ( RESET = '1' ) then                           
             present_state <= s1;   
             MR <= '0';                       
         else          
             MR <= '1';                                    
-            wait until (CLK'event and CLK = '1');         
-                present_state <= next_state;              
+            if (CLK'event and CLK = '1') then         
+                present_state <= next_state;    
+            end if;          
         end if;                                           
                                                           
     end process clk_process;                              
