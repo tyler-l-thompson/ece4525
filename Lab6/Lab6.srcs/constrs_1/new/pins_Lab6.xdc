@@ -1,3 +1,5 @@
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {CLK_IBUF}]
+
 # Task One pin assignment
 ##Switches
 set_property -dict { PACKAGE_PIN M13   IOSTANDARD LVCMOS33 } [get_ports { B }]; #IO_L6N_T0_D08_VREF_14 Sch=sw[2]
