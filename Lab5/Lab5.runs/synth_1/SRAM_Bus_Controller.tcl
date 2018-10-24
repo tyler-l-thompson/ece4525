@@ -17,16 +17,10 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-<<<<<<< HEAD
 set_param simulator.modelsimInstallPath D:/Modeltech_pe_edu_10.4a/win32pe_edu
-=======
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-17950-x2r2/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -ruleid {1}  -id {Common 17-55}  -string {{CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc:4]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.}}  -suppress 
->>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0

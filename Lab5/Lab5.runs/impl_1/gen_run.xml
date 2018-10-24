@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539613843">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539629987">
   <File Type="BITSTR-BMM" Name="SRAM_Bus_Controller_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="SRAM_Bus_Controller_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="SRAM_Bus_Controller_timing_summary_init.rpt"/>
@@ -23,11 +22,6 @@
   <File Type="PLACE-CTRL" Name="SRAM_Bus_Controller_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="SRAM_Bus_Controller_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="SRAM_Bus_Controller_incremental_reuse_pre_placed.rpt"/>
-=======
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539567862">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BG-DRC" Name="SRAM_Bus_Controller.drc"/>
->>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
   <File Type="BG-BGN" Name="SRAM_Bus_Controller.bgn"/>
   <File Type="PLACE-TIMING" Name="SRAM_Bus_Controller_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="SRAM_Bus_Controller_postplace_pwropt.dcp"/>
@@ -103,7 +97,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

@@ -60,112 +60,28 @@ proc step_failed { step } {
   close $ch
 }
 
-<<<<<<< HEAD
-=======
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -ruleid {1}  -id {Common 17-55}  -string {{CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc:4]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.}}  -suppress 
->>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 
-start_step init_design
-set ACTIVE_STEP init_design
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
 set rc [catch {
-<<<<<<< HEAD
-  create_msg_db init_design.pb
-  set_param simulator.modelsimInstallPath D:/Modeltech_pe_edu_10.4a/win32pe_edu
-  create_project -in_memory -part xc7a100tcsg324-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.xpr [current_project]
-  set_property ip_output_repo C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.runs/synth_1/SRAM_Bus_Controller.dcp
-  read_xdc C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc
-  link_design -top SRAM_Bus_Controller -part xc7a100tcsg324-1
-  close_msg_db -file init_design.pb
-=======
   create_msg_db write_bitstream.pb
+  set_param simulator.modelsimInstallPath D:/Modeltech_pe_edu_10.4a/win32pe_edu
   set_param xicom.use_bs_reader 1
   open_checkpoint SRAM_Bus_Controller_routed.dcp
-  set_property webtalk.parent_dir /home/dexter/scripts/ECE4525/Lab5/Lab5.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.cache/wt [current_project]
   catch { write_mem_info -force SRAM_Bus_Controller.mmi }
   write_bitstream -force SRAM_Bus_Controller.bit 
   catch {write_debug_probes -quiet -force SRAM_Bus_Controller}
   catch {file copy -force SRAM_Bus_Controller.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
->>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 } RESULT]
 if {$rc} {
-  step_failed init_design
+  step_failed write_bitstream
   return -code error $RESULT
 } else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-  opt_design 
-  write_checkpoint -force SRAM_Bus_Controller_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file SRAM_Bus_Controller_drc_opted.rpt -pb SRAM_Bus_Controller_drc_opted.pb -rpx SRAM_Bus_Controller_drc_opted.rpx"
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
-    implement_debug_core 
-  } 
-  place_design 
-  write_checkpoint -force SRAM_Bus_Controller_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file SRAM_Bus_Controller_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file SRAM_Bus_Controller_utilization_placed.rpt -pb SRAM_Bus_Controller_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file SRAM_Bus_Controller_control_sets_placed.rpt"
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-  route_design 
-  write_checkpoint -force SRAM_Bus_Controller_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file SRAM_Bus_Controller_drc_routed.rpt -pb SRAM_Bus_Controller_drc_routed.pb -rpx SRAM_Bus_Controller_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file SRAM_Bus_Controller_methodology_drc_routed.rpt -pb SRAM_Bus_Controller_methodology_drc_routed.pb -rpx SRAM_Bus_Controller_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file SRAM_Bus_Controller_power_routed.rpt -pb SRAM_Bus_Controller_power_summary_routed.pb -rpx SRAM_Bus_Controller_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file SRAM_Bus_Controller_route_status.rpt -pb SRAM_Bus_Controller_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file SRAM_Bus_Controller_timing_summary_routed.rpt -pb SRAM_Bus_Controller_timing_summary_routed.pb -rpx SRAM_Bus_Controller_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file SRAM_Bus_Controller_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file SRAM_Bus_Controller_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file SRAM_Bus_Controller_bus_skew_routed.rpt -pb SRAM_Bus_Controller_bus_skew_routed.pb -rpx SRAM_Bus_Controller_bus_skew_routed.rpx"
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-  write_checkpoint -force SRAM_Bus_Controller_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

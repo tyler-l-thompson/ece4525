@@ -112,7 +112,7 @@ begin
             MR <= '0';                       
         else          
             MR <= '1';                                    
-            if (CLK'event and CLK = '1') then         
+            if (CLK'event and CLK = '0') then         
                 present_state <= next_state;   
                 S0_out <= S0_in;
                 S1_out <= S1_in;

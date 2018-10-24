@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 set_property SRC_FILE_INFO {cfile:C:/Users/Dexter/Documents/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc rfile:../../../Lab5.srcs/constrs_1/new/pins_lab5.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets CLK_IBUF]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { CLK }]; #IO_L20N_T3_A19_15 Sch=ja[1]
-=======
-set_property SRC_FILE_INFO {cfile:/home/dexter/scripts/ECE4525/Lab5/Lab5.srcs/constrs_1/new/pins_lab5.xdc rfile:../../../Lab5.srcs/constrs_1/new/pins_lab5.xdc id:1} [current_design]
-set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { CLK }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
->>>>>>> 6a235d4a76582693c09167c6647440b8c808508f
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D18   IOSTANDARD LVCMOS33 } [get_ports { START }]; #IO_L21N_T3_DQS_A18_15 Sch=ja[2]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

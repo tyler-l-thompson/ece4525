@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2018.2 (64-bit)              -->
+<!-- Product Version: Vivado v2018.2.1 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="/home/dexter/scripts/ECE4525/Lab6/Lab6.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Dexter/Documents/ECE4525/Lab6/Lab6.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="daf8b17ea40f4b8f8823288475278858"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
-    <Option Name="CompiledLibDir" Val="$PPRDIR/../../../../home/dexter/.PlayOnLinux/wineprefix/modelsim/drive_c/Modeltech_pe_edu_10.4a/win32pe_edu/work"/>
+    <Option Name="CompiledLibDir" Val="D:/Modeltech_pe_edu_10.4a/CompiledLibraries"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PPRDIR/../../../../home/dexter/.PlayOnLinux/wineprefix/modelsim/drive_c/Modeltech_pe_edu_10.4a/win32pe_edu/work"/>
+    <Option Name="CompiledLibDirModelSim" Val="D:/Modeltech_pe_edu_10.4a/CompiledLibraries"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
     <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
     <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
@@ -18,6 +18,7 @@
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
+    <Option Name="TargetSimulator" Val="ModelSim"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
@@ -33,7 +34,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
     <Option Name="WTXSimLaunchSim" Val="0"/>
-    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="4"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
@@ -60,13 +61,13 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/task_one_serial_adder.vhd">
+      <File Path="$PSRCDIR/sources_1/new/task_two_shift_register.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/task_two_shift_register.vhd">
+      <File Path="$PSRCDIR/sources_1/new/task_one_serial_adder.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -75,8 +76,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="task_one_serial_adder"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopModule" Val="task_two_shift_register"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -96,9 +96,8 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="task_one_serial_adder"/>
+        <Option Name="TopModule" Val="task_two_shift_register"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
@@ -116,17 +115,11 @@
     <Simulator Name="Questa">
       <Option Name="Description" Val="Questa Advanced Simulator"/>
     </Simulator>
-    <Simulator Name="IES">
-      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
-    </Simulator>
-    <Simulator Name="Xcelium">
-      <Option Name="Description" Val="Xcelium Parallel Simulator"/>
-    </Simulator>
-    <Simulator Name="VCS">
-      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
-    </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
@@ -238,6 +231,37 @@ Resolution: Poor placement of an IO pin and a BUFG has resulted in the router us
     <MsgAttr Name="CreatedTimestamp" Val=""/>
     <MsgAttr Name="StringsToMatch" Val="WARNING: [Power 33-232] No user defined clocks were found in the design!
 Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Common 17-55"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="14"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="CRITICAL WARNING: [Common 17-55] &apos;set_property&apos; expects at least one object. [C:/Users/Dexter/Documents/ECE4525/Lab6/Lab6.srcs/constrs_1/new/pins_Lab6.xdc:1]
+Resolution: If [get_&lt;value>] was used to populate the object, check to make sure this command returns at least one valid object."/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Vivado 12-507"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="8"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="15"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+    <MsgAttr Name="StringsToMatch" Val="WARNING: [Vivado 12-507] No nets matched &apos;CLK_IBUF&apos;. [C:/Users/Dexter/Documents/ECE4525/Lab6/Lab6.srcs/constrs_1/new/pins_Lab6.xdc:1]"/>
   </MsgRule>
   <MsgRule>
     <MsgAttr Name="RuleType" Val="0"/>
