@@ -15,4 +15,4 @@ set_property -dict { PACKAGE_PIN G6    IOSTANDARD LVCMOS33 } [get_ports { CAS }]
 set_property -dict { PACKAGE_PIN E7    IOSTANDARD LVCMOS33 } [get_ports { RAS }]; #IO_L6P_T0_35 Sch=jc[7]
 set_property -dict { PACKAGE_PIN J3    IOSTANDARD LVCMOS33 } [get_ports { W }]; #IO_L22P_T3_35 Sch=jc[8]
 
-set_property -dict { PACKAGE_PIN E6    IOSTANDARD LVCMOS33 } [get_ports { CLKOUT }]; #IO_L5P_T0_AD13P_35 Sch=jc[10]
+#set_property -dict { PACKAGE_PIN E6    IOSTANDARD LVCMOS33 } [get_ports { CLKOUT }]; #IO_L5P_T0_AD13P_35 Sch=jc[10]
