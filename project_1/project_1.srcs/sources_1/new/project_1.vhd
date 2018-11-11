@@ -181,7 +181,7 @@ begin
     begin                                                 
         if ( RESET = '1' ) then                           
             present_state <= idle;    
-                                 
+            OVF <= '0';                     
         else                                             
             if (CLK'event and CLK = '1') then
                 if ( count = "110" or count = "111" or present_state = idle ) then
