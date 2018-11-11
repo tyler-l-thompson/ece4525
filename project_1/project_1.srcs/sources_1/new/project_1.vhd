@@ -23,7 +23,7 @@ architecture Behavioral of project_1 is
                                                       
     signal present_state, next_state: state_type := idle;   
     
-    signal OP2_IN_not, OVF_REG, OVF_REG_OUT : std_logic := '0';
+    signal OP2_IN_not, OVF_REG : std_logic := '0';
     signal count : std_logic_vector(2 downto 0) := "000";
                                                       
 begin                                                     
