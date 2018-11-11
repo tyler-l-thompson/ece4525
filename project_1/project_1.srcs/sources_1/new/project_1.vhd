@@ -35,7 +35,7 @@ begin
         when idle =>
             RES_OUT <= '0';                                   
             OVF_REG <= OVF_REG;
-            DONE <= '0';
+            DONE <= '1';
             OP_LD <= '0';
             RES_LD <= '0';
             BUF_EN <= "11";
@@ -51,7 +51,7 @@ begin
             BUF_EN <= "00";
             RES_OUT <= '0';                                   
             OVF_REG <= '0';
-            DONE <= '1';
+            DONE <= '0';
             OP_LD <= '1';
             RES_LD <= '0';
             next_state <= s1;
@@ -59,7 +59,7 @@ begin
         when s1 =>       
             SRCT <= "1010";  
             BUF_EN <= "11";
-            DONE <= '1';  
+            DONE <= '0';  
             OP_LD <= '1';
             RES_LD <= '1';
             if ( count = "000" ) then
@@ -90,7 +90,7 @@ begin
             SRCT <= "1010";  
             BUF_EN <= "11";                                      
             RES_OUT <= '0';                                        
-            DONE <= '1';   
+            DONE <= '0';   
             OP_LD <= '1';    
             RES_LD <= '1';                        
                                                           
@@ -116,7 +116,7 @@ begin
             SRCT <= "1010";
             BUF_EN <= "11";                               
             RES_OUT <= '1';                                         
-            DONE <= '1';    
+            DONE <= '0';    
             OP_LD <= '1';  
             RES_LD <= '1';                        
                                                           
@@ -142,7 +142,7 @@ begin
             SRCT <= "1010";
             BUF_EN <= "11";                               
             RES_OUT <= '0';                                      
-            DONE <= '1';  
+            DONE <= '0';  
             OP_LD <= '1';  
             RES_LD <= '1';                            
                                                           
@@ -179,7 +179,7 @@ begin
                                                           
     clk_process: process(CLK, RESET, next_state, OP2_IN, count, OVF_REG)                               
     begin                                                 
-        if ( RESET = '1' ) then                           
+        if ( RESET = '0' ) then                           
             present_state <= idle;    
             OVF <= '0';                     
         else                                             

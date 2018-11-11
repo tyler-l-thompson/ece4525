@@ -2,12 +2,12 @@ restart
 
 force CLK 0 0, 1 10ns -r 20ns
 
-force RESET 1 @0ns
+force RESET 0 @0ns
 force START 0 @0ns
 force OP1_IN 0 @0ns
 force OP2_IN 0 @0ns
 
-force RESET 0 @10ns
+force RESET 1 @10ns
 force START 1 @10ns
 force START 0 @70ns
 
