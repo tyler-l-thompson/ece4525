@@ -66,19 +66,22 @@ begin
                 RES_OUT <= '0';
             else                          
                 RES_OUT <= '1';
-            end if;                                   
-            OVF_REG <= '1';                                    
+            end if;                                                                       
                                                           
             if ( OP1_IN = '0' ) then                           
-                if ( OP2_IN_not = '0' ) then                       
+                if ( OP2_IN_not = '0' ) then   
+                    OVF_REG <= '1';                    
                     next_state <= s1;                     
-                elsif ( OP2_IN_not = '1' ) then                    
+                elsif ( OP2_IN_not = '1' ) then 
+                    OVF_REG <= '0';                                       
                     next_state <= s2;                     
                 end if;                                   
             elsif ( OP1_IN = '1' ) then                        
-                if ( OP2_IN_not = '0' ) then                       
+                if ( OP2_IN_not = '0' ) then   
+                    OVF_REG <= '0';                     
                     next_state <= s2;                     
-                elsif ( OP2_IN_not = '1' ) then                    
+                elsif ( OP2_IN_not = '1' ) then  
+                    OVF_REG <= '1';                  
                     next_state <= s3;                     
                 end if;                                   
             end if;                                       
@@ -86,22 +89,25 @@ begin
         when s2 =>
             SRCT <= "1010";  
             BUF_EN <= "11";                                      
-            RES_OUT <= '0';                                   
-            OVF_REG <= '1';     
+            RES_OUT <= '0';                                        
             DONE <= '1';   
             OP_LD <= '1';    
             RES_LD <= '1';                        
                                                           
             if ( OP1_IN = '0' ) then                           
-                if ( OP2_IN_not = '0' ) then                       
+                if ( OP2_IN_not = '0' ) then   
+                    OVF_REG <= '1';                    
                     next_state <= s1;                     
-                elsif ( OP2_IN_not = '1' ) then                    
+                elsif ( OP2_IN_not = '1' ) then 
+                    OVF_REG <= '0';                   
                     next_state <= s2;                     
                 end if;                                   
             elsif ( OP1_IN = '1' ) then                        
-                if ( OP2_IN_not = '0' ) then                       
+                if ( OP2_IN_not = '0' ) then  
+                    OVF_REG <= '0';                      
                     next_state <= s2;                     
-                elsif ( OP2_IN_not = '1' ) then                    
+                elsif ( OP2_IN_not = '1' ) then
+                    OVF_REG <= '0';                    
                     next_state <= s3;                     
                 end if;                                   
             end if;                                       
@@ -109,22 +115,25 @@ begin
         when s3 =>         
             SRCT <= "1010";
             BUF_EN <= "11";                               
-            RES_OUT <= '1';                                   
-            OVF_REG <= '0';      
+            RES_OUT <= '1';                                         
             DONE <= '1';    
             OP_LD <= '1';  
             RES_LD <= '1';                        
                                                           
             if ( OP1_IN = '0' ) then                           
-                if ( OP2_IN_not = '0' ) then                       
+                if ( OP2_IN_not = '0' ) then    
+                    OVF_REG <= '0';          
                     next_state <= s2;                     
-                elsif ( OP2_IN_not = '1' ) then                    
+                elsif ( OP2_IN_not = '1' ) then
+                    OVF_REG <= '0';                    
                     next_state <= s3;                     
                 end if;                                   
             elsif ( OP1_IN = '1' ) then                        
-                if ( OP2_IN_not = '0' ) then                       
+                if ( OP2_IN_not = '0' ) then
+                    OVF_REG <= '0';                       
                     next_state <= s3;                     
-                elsif ( OP2_IN_not = '1' ) then                    
+                elsif ( OP2_IN_not = '1' ) then
+                    OVF_REG <= '1';                    
                     next_state <= s4;                     
                 end if;                                   
             end if;                                       
@@ -132,22 +141,25 @@ begin
         when s4 =>         
             SRCT <= "1010";
             BUF_EN <= "11";                               
-            RES_OUT <= '0';                                   
-            OVF_REG <= '0';    
+            RES_OUT <= '0';                                      
             DONE <= '1';  
             OP_LD <= '1';  
             RES_LD <= '1';                            
                                                           
             if ( OP1_IN = '0' ) then                           
-                if ( OP2_IN_not = '0' ) then                       
+                if ( OP2_IN_not = '0' ) then   
+                    OVF_REG <= '1';                    
                     next_state <= s2;                     
-                elsif ( OP2_IN_not = '1' ) then                    
+                elsif ( OP2_IN_not = '1' ) then
+                    OVF_REG <= '0';                    
                     next_state <= s3;                     
                 end if;                                   
             elsif ( OP1_IN = '1' ) then                        
-                if ( OP2_IN_not = '0' ) then                       
+                if ( OP2_IN_not = '0' ) then   
+                    OVF_REG <= '0';                     
                     next_state <= s3;                     
-                elsif ( OP2_IN_not = '1' ) then                    
+                elsif ( OP2_IN_not = '1' ) then 
+                    OVF_REG <= '0';                   
                     next_state <= s4;                     
                 end if;                                   
             end if;                                       
@@ -172,7 +184,11 @@ begin
                                  
         else                                             
             if (CLK'event and CLK = '1') then
-                OVF <= OVF_REG;
+                if ( count = "110" or count = "111" or present_state = idle ) then
+                    OVF <= OVF_REG;
+                else
+                    OVF <= '0';
+                end if;
                     
                 if ( present_state = s1 or present_state = s2 or present_state = s3 or present_state = s4 ) then
                     count <= std_logic_vector( unsigned(count) + 1 );
