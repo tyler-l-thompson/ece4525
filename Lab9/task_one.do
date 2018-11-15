@@ -1,7 +1,5 @@
 restart
 
-force RESET 0 @0ns
-force RESET 1 @10ns
 
 force X1 0 @0ns
 force X2 0 @0ns
