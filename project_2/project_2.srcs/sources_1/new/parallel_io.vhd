@@ -118,7 +118,7 @@ end process control_reg;
 
 status_reg0: process(RESET, status, async_status, RD, control, STB, async_strobe_reset)
 begin
-    IBF <= status(0);
+    IBF <= async_status(0);
     if ((RESET = '1' ) or (RD = '1' and status(2) = '0' and control(0) = '1' and STB = '1'and async_strobe_reset = '1'))then
         status(0) <= '0';
     else
@@ -144,7 +144,7 @@ end process status_reg1;
 status_reg2: process(RESET, status, async_status, A0, CE, STB, async_strobe_reset, control, RD)
 begin
     if ( control(1) = '1') then
-        INTR <= status(2);
+        INTR <= async_status(1);
     else
         INTR <= '0';
     end if;
