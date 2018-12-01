@@ -33,4 +33,7 @@ set_property -dict { PACKAGE_PIN J3    IOSTANDARD LVCMOS33 } [get_ports { CE }];
 set_property -dict { PACKAGE_PIN J4    IOSTANDARD LVCMOS33 } [get_ports { RD }]; #IO_L21P_T3_DQS_35 Sch=jc[9]
 set_property -dict { PACKAGE_PIN E6    IOSTANDARD LVCMOS33 } [get_ports { WR }]; #IO_L5P_T0_AD13P_35 Sch=jc[10]
 
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets RD]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets STB]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets WR]
 

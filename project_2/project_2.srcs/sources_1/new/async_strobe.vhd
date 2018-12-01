@@ -14,7 +14,7 @@ entity async_strobe is
   Port ( 
     STB, RD, RESET : in STD_LOGIC;
    -- Y1, Y2, Y3 : inout STD_LOGIC;
-    IBF, INTR : out STD_LOGIC
+    IBF, INTR, DONE : out STD_LOGIC
   );
 end async_strobe;
 
@@ -23,6 +23,8 @@ architecture Behavioral of async_strobe is
     signal Y1, Y2, Y3 : STD_LOGIC := '0';
 
 begin
+
+    DONE <= not Y1 and not Y2 and not Y3 and RD;
 
     Y1 <= (((STB and RD and Y2 and Y3) or 
           (STB and Y1 and Y2 and not Y3) or 
